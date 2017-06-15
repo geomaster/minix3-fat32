@@ -2024,6 +2024,38 @@ typedef struct {
 _ASSERT_MSG_SIZE(mess_vmmcp_reply);
 
 typedef struct {
+	uint8_t device[56];
+} mess_fat32_open_fs;
+_ASSERT_MSG_SIZE(mess_fat32_open_fs);
+
+typedef struct {
+	uint32_t handle;
+	void     *buf_ptr;
+	uint32_t *buf_size_ptr;
+	char     padding[44];
+} mess_fat32_read_block;
+_ASSERT_MSG_SIZE(mess_fat32_read_block);
+
+typedef struct {
+	uint32_t handle;
+	void     *dest;
+	char     padding[48];
+} mess_fat32_read_direntry;
+_ASSERT_MSG_SIZE(mess_fat32_read_direntry);
+
+typedef struct {
+	uint32_t handle;
+	char padding[52];
+} mess_fat32_io_handle;
+_ASSERT_MSG_SIZE(mess_fat32_io_handle);
+
+typedef struct {
+	uint32_t ret;
+	char padding[52];
+} mess_fat32_ret;
+_ASSERT_MSG_SIZE(mess_fat32_ret);
+
+typedef struct {
 	endpoint_t m_source;		/* who sent the message */
 	int m_type;			/* what kind of message is it */
 	union {
@@ -2251,6 +2283,12 @@ typedef struct {
 		mess_vm_vfs_mmap	m_vm_vfs_mmap;
 		mess_vmmcp		m_vmmcp;
 		mess_vmmcp_reply	m_vmmcp_reply;
+
+		mess_fat32_open_fs m_fat32_open_fs;
+		mess_fat32_read_block m_fat32_read_block;
+		mess_fat32_read_direntry m_fat32_read_direntry;
+		mess_fat32_io_handle m_fat32_io_handle;
+		mess_fat32_ret m_fat32_ret;
 
 		u8_t size[56];	/* message payload may have 56 bytes at most */
 	};
