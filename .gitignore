@@ -1,0 +1,94 @@
+# Binary artifacts.
+*.o
+*.a
+*.so
+*.d
+
+# I'm not sure what these do, but pretty sure they are not part
+# of the source.
+.depend
+.gdbinit
+
+# Stuff we don't have permission to access.
+usr/src/minix/drivers/storage/ramdisk/etc/master.passwd
+usr/src/minix/drivers/storage/ramdisk/etc/spwd.db
+
+# Staging dir for `make hdboot` in ls dir.
+usr/src/minix/servers/fat32/staging/
+
+# Binary artifacts. Because MINIX builds in-tree, and these files
+# don't have an extension, we can't ignore them with a single
+# .gitignore line and must resort to naming them one-by-one.
+usr/src/minix/servers/fat32/fat32
+usr/src/minix/drivers/audio/es1370/es1370
+usr/src/minix/drivers/audio/es1371/es1371
+usr/src/minix/drivers/audio/sb16/sb16
+usr/src/minix/drivers/bus/pci/pci
+usr/src/minix/drivers/bus/ti1225/ti1225
+usr/src/minix/drivers/clock/readclock/readclock.drv
+usr/src/minix/drivers/examples/hello/hello
+usr/src/minix/drivers/hid/pckbd/pckbd
+usr/src/minix/drivers/iommu/amddev/amddev
+usr/src/minix/drivers/net/atl2/atl2
+usr/src/minix/drivers/net/dec21140A/dec21140A
+usr/src/minix/drivers/net/dp8390/dp8390
+usr/src/minix/drivers/net/dpeth/dpeth
+usr/src/minix/drivers/net/e1000/e1000
+usr/src/minix/drivers/net/fxp/fxp
+usr/src/minix/drivers/net/lance/lance
+usr/src/minix/drivers/net/orinoco/orinoco
+usr/src/minix/drivers/net/rtl8139/rtl8139
+usr/src/minix/drivers/net/rtl8169/rtl8169
+usr/src/minix/drivers/net/uds/uds
+usr/src/minix/drivers/net/virtio_net/virtio_net
+usr/src/minix/drivers/power/acpi/acpi
+usr/src/minix/drivers/printer/printer/printer
+usr/src/minix/drivers/storage/ahci/ahci
+usr/src/minix/drivers/storage/at_wini/at_wini
+usr/src/minix/drivers/storage/fbd/fbd
+usr/src/minix/drivers/storage/filter/filter
+usr/src/minix/drivers/storage/floppy/floppy
+usr/src/minix/drivers/storage/memory/memory
+usr/src/minix/drivers/storage/mmc/mmc
+usr/src/minix/drivers/storage/ramdisk/acpi
+usr/src/minix/drivers/storage/ramdisk/ahci
+usr/src/minix/drivers/storage/ramdisk/at_wini
+usr/src/minix/drivers/storage/ramdisk/ext2
+usr/src/minix/drivers/storage/ramdisk/floppy
+usr/src/minix/drivers/storage/ramdisk/image
+usr/src/minix/drivers/storage/ramdisk/input
+usr/src/minix/drivers/storage/ramdisk/mfs
+usr/src/minix/drivers/storage/ramdisk/pci
+usr/src/minix/drivers/storage/ramdisk/pckbd
+usr/src/minix/drivers/storage/ramdisk/procfs
+usr/src/minix/drivers/storage/ramdisk/virtio_blk
+usr/src/minix/drivers/storage/virtio_blk/virtio_blk
+usr/src/minix/drivers/storage/vnd/vnd
+usr/src/minix/drivers/system/log/log
+usr/src/minix/drivers/system/random/random
+usr/src/minix/drivers/tty/pty/pty
+usr/src/minix/drivers/tty/tty/tty
+usr/src/minix/drivers/usb/usb_hub/usb_hub
+usr/src/minix/drivers/usb/usb_storage/usb_storage
+usr/src/minix/drivers/vmm_guest/vbox/vbox
+usr/src/minix/fs/ext2/ext2
+usr/src/minix/fs/hgfs/hgfs
+usr/src/minix/fs/mfs/mfs
+usr/src/minix/fs/pfs/pfs
+usr/src/minix/fs/procfs/procfs
+usr/src/minix/fs/vbfs/vbfs
+usr/src/minix/kernel/kernel
+usr/src/minix/lib/libsys/libsys.so.0.0
+usr/src/minix/lib/libsys/sef.pico
+usr/src/minix/net/inet/inet
+usr/src/minix/net/lwip/lwip
+usr/src/minix/servers/devman/devman
+usr/src/minix/servers/ds/ds
+usr/src/minix/servers/input/input
+usr/src/minix/servers/ipc/ipc
+usr/src/minix/servers/is/is
+usr/src/minix/servers/pm/pm
+usr/src/minix/servers/rs/rs
+usr/src/minix/servers/sched/sched
+usr/src/minix/servers/vfs/vfs
+usr/src/minix/servers/vm/vm

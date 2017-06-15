@@ -1,0 +1,598 @@
+Archive member included because of file (symbol)
+
+libmthread_pic.a(pthread_compat.pico)
+                              (--whole-archive)
+libmthread_pic.a(rwlock.pico)
+                              (--whole-archive)
+libmthread_pic.a(event.pico)  (--whole-archive)
+libmthread_pic.a(scheduler.pico)
+                              (--whole-archive)
+libmthread_pic.a(queue.pico)  (--whole-archive)
+libmthread_pic.a(mutex.pico)  (--whole-archive)
+libmthread_pic.a(misc.pico)   (--whole-archive)
+libmthread_pic.a(condition.pico)
+                              (--whole-archive)
+libmthread_pic.a(allocate.pico)
+                              (--whole-archive)
+libmthread_pic.a(key.pico)    (--whole-archive)
+libmthread_pic.a(attribute.pico)
+                              (--whole-archive)
+
+Allocating common symbols
+Common symbol       size              file
+
+running_main_thread
+                    0x4               libmthread_pic.a(allocate.pico)
+run_queue           0x8               libmthread_pic.a(allocate.pico)
+threads             0x4               libmthread_pic.a(allocate.pico)
+current_thread      0x4               libmthread_pic.a(allocate.pico)
+used_threads        0x4               libmthread_pic.a(allocate.pico)
+need_reset          0x4               libmthread_pic.a(allocate.pico)
+mainthread          0x348             libmthread_pic.a(allocate.pico)
+free_threads        0x8               libmthread_pic.a(allocate.pico)
+no_threads          0x4               libmthread_pic.a(allocate.pico)
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x00000000        0x0 libmthread_pic.a(pthread_compat.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libmthread_pic.a(rwlock.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libmthread_pic.a(event.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libmthread_pic.a(scheduler.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libmthread_pic.a(queue.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libmthread_pic.a(mutex.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libmthread_pic.a(misc.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libmthread_pic.a(condition.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libmthread_pic.a(allocate.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libmthread_pic.a(key.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libmthread_pic.a(attribute.pico)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/crti.o
+LOAD /usr/lib/crtbeginS.o
+LOAD libmthread_pic.a
+LOAD /usr/lib/crtendS.o
+LOAD /usr/lib/crtn.o
+                0x000000f4                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x000000f4      0x42c
+ *(.hash)
+ .hash          0x000000f4      0x42c /usr/lib/crti.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000520      0x860
+ *(.dynsym)
+ .dynsym        0x00000520      0x860 /usr/lib/crti.o
+
+.dynstr         0x00000d80      0x92c
+ *(.dynstr)
+ .dynstr        0x00000d80      0x92c /usr/lib/crti.o
+
+.gnu.version    0x000016ac        0x0
+ *(.gnu.version)
+ .gnu.version   0x00000000        0x0 /usr/lib/crti.o
+
+.gnu.version_d  0x000016ac        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000        0x0 /usr/lib/crti.o
+
+.gnu.version_r  0x000016ac        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000        0x0 /usr/lib/crti.o
+
+.rel.dyn        0x000016ac       0xd0
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ .rel.data.rel  0x000016ac        0x8 /usr/lib/crti.o
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ .rel.ctors     0x000016b4        0x8 /usr/lib/crti.o
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x000016bc       0xc0 /usr/lib/crti.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rel.ifunc)
+ .rel.ifunc     0x00000000        0x0 /usr/lib/crti.o
+
+.rel.plt        0x0000177c      0x190
+ *(.rel.plt)
+ .rel.plt       0x0000177c      0x190 /usr/lib/crti.o
+ *(.rel.iplt)
+
+.init           0x00001910        0xa
+ *(SORT(.init))
+ .init          0x00001910        0x3 /usr/lib/crti.o
+                0x00001910                _init
+ .init          0x00001913        0x5 /usr/lib/crtbeginS.o
+ .init          0x00001918        0x2 /usr/lib/crtn.o
+
+.plt            0x00001920      0x330
+ *(.plt)
+ .plt           0x00001920      0x330 /usr/lib/crti.o
+ *(.iplt)
+
+.text           0x00001c50     0x20cc
+                0x00001c50                PROVIDE (__eprol, .)
+ *(.text.unlikely .text.*_unlikely)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00001c50        0x0 /usr/lib/crti.o
+ .text          0x00001c50       0xef /usr/lib/crtbeginS.o
+ *fill*         0x00001d3f        0x1 
+ .text          0x00001d40      0x248 libmthread_pic.a(pthread_compat.pico)
+                0x00001d40                pthread_mutex_init
+                0x00001d60                pthread_mutex_destroy
+                0x00001d90                pthread_mutex_lock
+                0x00001dd0                pthread_mutex_trylock
+                0x00001e20                pthread_mutex_unlock
+                0x00001e60                pthread_cond_init
+                0x00001e80                pthread_cond_broadcast
+                0x00001ec0                pthread_cond_destroy
+                0x00001ef0                pthread_cond_signal
+                0x00001f30                pthread_cond_wait
+                0x00001f70                pthread_rwlock_init
+ *fill*         0x00001f88        0x8 
+ .text          0x00001f90      0x27f libmthread_pic.a(rwlock.pico)
+                0x00001f90                mthread_rwlock_init
+                0x00002000                pthread_rwlock_destroy
+                0x00002000                mthread_rwlock_destroy
+                0x000020a0                mthread_rwlock_rdlock
+                0x000020a0                pthread_rwlock_rdlock
+                0x000020f0                pthread_rwlock_wrlock
+                0x000020f0                mthread_rwlock_wrlock
+                0x00002180                mthread_rwlock_unlock
+                0x00002180                pthread_rwlock_unlock
+ *fill*         0x0000220f        0x1 
+ .text          0x00002210      0x1ae libmthread_pic.a(event.pico)
+                0x00002210                mthread_event_init
+                0x00002210                pthread_event_init
+                0x00002280                pthread_event_destroy
+                0x00002280                mthread_event_destroy
+                0x000022c0                pthread_event_wait
+                0x000022c0                mthread_event_wait
+                0x00002320                mthread_event_fire
+                0x00002320                pthread_event_fire
+                0x00002370                pthread_event_fire_all
+                0x00002370                mthread_event_fire_all
+ *fill*         0x000023be        0x2 
+ .text          0x000023c0      0x2e4 libmthread_pic.a(scheduler.pico)
+                0x000023c0                mthread_getcontext
+                0x000023f0                mthread_schedule
+                0x00002490                mthread_init_scheduler
+                0x000024c0                mthread_suspend
+                0x00002510                mthread_unsuspend
+                0x00002570                sched_yield
+                0x00002570                mthread_yield
+                0x00002570                pthread_yield
+                0x00002650                pthread_yield_all
+                0x00002650                mthread_yield_all
+ *fill*         0x000026a4        0xc 
+ .text          0x000026b0      0x10c libmthread_pic.a(queue.pico)
+                0x000026b0                mthread_queue_add
+                0x00002710                mthread_queue_isempty
+                0x00002730                mthread_queue_init
+                0x00002750                mthread_queue_remove
+ *fill*         0x000027bc        0x4 
+ .text          0x000027c0      0x240 libmthread_pic.a(mutex.pico)
+                0x000027c0                mthread_init_valid_mutexes
+                0x000027d0                mthread_mutex_destroy
+                0x00002870                mthread_mutex_init
+                0x000028e0                mthread_mutex_lock
+                0x00002950                mthread_mutex_trylock
+                0x000029a0                mthread_mutex_unlock
+ .text          0x00002a00      0x115 libmthread_pic.a(misc.pico)
+                0x00002a00                mthread_panic_s
+                0x00002a30                mthread_stacktrace
+                0x00002ad0                mthread_stacktraces
+ *fill*         0x00002b15        0xb 
+ .text          0x00002b20      0x2e7 libmthread_pic.a(condition.pico)
+                0x00002b20                mthread_init_valid_conditions
+                0x00002b30                mthread_cond_broadcast
+                0x00002bc0                mthread_cond_destroy
+                0x00002c70                mthread_cond_init
+                0x00002cd0                mthread_cond_signal
+                0x00002d70                mthread_cond_wait
+ *fill*         0x00002e07        0x9 
+ .text          0x00002e10      0x87b libmthread_pic.a(allocate.pico)
+                0x00002e10                mthread_equal
+                0x00002e10                pthread_equal
+                0x00002e30                pthread_create
+                0x00002e30                mthread_create
+                0x00003150                pthread_detach
+                0x00003150                mthread_detach
+                0x000031c0                mthread_find_tcb
+                0x000032b0                pthread_exit
+                0x000032b0                mthread_exit
+                0x000033f0                mthread_join
+                0x000033f0                pthread_join
+                0x00003510                pthread_once
+                0x00003510                mthread_once
+                0x00003550                pthread_self
+                0x00003550                mthread_self
+                0x00003570                mthread_thread_reset
+ *fill*         0x0000368b        0x5 
+ .text          0x00003690      0x328 libmthread_pic.a(key.pico)
+                0x00003690                mthread_init_keys
+                0x000036c0                mthread_key_create
+                0x000036c0                pthread_key_create
+                0x00003730                mthread_key_delete
+                0x00003730                pthread_key_delete
+                0x00003790                pthread_getspecific
+                0x00003790                mthread_getspecific
+                0x000037f0                mthread_setspecific
+                0x000037f0                pthread_setspecific
+                0x000038f0                mthread_cleanup_values
+ *fill*         0x000039b8        0x8 
+ .text          0x000039c0      0x35c libmthread_pic.a(attribute.pico)
+                0x000039c0                mthread_init_valid_attributes
+                0x000039f0                mthread_attr_destroy
+                0x000039f0                pthread_attr_destroy
+                0x00003a80                pthread_attr_init
+                0x00003a80                mthread_attr_init
+                0x00003b40                mthread_attr_getdetachstate
+                0x00003b40                pthread_attr_getdetachstate
+                0x00003b90                mthread_attr_setdetachstate
+                0x00003b90                pthread_attr_setdetachstate
+                0x00003be0                mthread_attr_getstack
+                0x00003be0                pthread_attr_getstack
+                0x00003c30                pthread_attr_getstacksize
+                0x00003c30                mthread_attr_getstacksize
+                0x00003c80                mthread_attr_setstack
+                0x00003c80                pthread_attr_setstack
+                0x00003cd0                pthread_attr_setstacksize
+                0x00003cd0                mthread_attr_setstacksize
+ .text          0x00003d1c        0x0 /usr/lib/crtendS.o
+ .text          0x00003d1c        0x0 /usr/lib/crtn.o
+ *(.gnu.warning)
+
+.fini           0x00003d20        0xa
+ *(SORT(.fini))
+ .fini          0x00003d20        0x3 /usr/lib/crti.o
+                0x00003d20                _fini
+ .fini          0x00003d23        0x5 /usr/lib/crtbeginS.o
+ .fini          0x00003d28        0x2 /usr/lib/crtn.o
+                0x00003d2a                PROVIDE (__etext, .)
+                0x00003d2a                PROVIDE (_etext, .)
+                0x00003d2a                PROVIDE (etext, .)
+
+.rodata         0x00003d2c       0xbc
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.1
+                0x00003d2c       0x91 libmthread_pic.a(rwlock.pico)
+ .rodata.str1.1
+                0x00003dbd       0x15 libmthread_pic.a(misc.pico)
+ *fill*         0x00003dd2        0x2 
+ .rodata        0x00003dd4       0x14 libmthread_pic.a(allocate.pico)
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x00003de8      0x264
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x00003de8      0x264 libmthread_pic.a(pthread_compat.pico)
+
+.eh_frame       0x0000404c      0x900
+ *(.eh_frame)
+ .eh_frame      0x0000404c       0x3c /usr/lib/crti.o
+                                 0x40 (size before relaxing)
+ .eh_frame      0x00004088        0x0 /usr/lib/crtbeginS.o
+ .eh_frame      0x00004088      0x138 libmthread_pic.a(pthread_compat.pico)
+                                0x150 (size before relaxing)
+ .eh_frame      0x000041c0       0xa0 libmthread_pic.a(rwlock.pico)
+                                 0xb8 (size before relaxing)
+ .eh_frame      0x00004260       0x9c libmthread_pic.a(event.pico)
+                                 0xb4 (size before relaxing)
+ .eh_frame      0x000042fc       0xd8 libmthread_pic.a(scheduler.pico)
+                                 0xf0 (size before relaxing)
+ .eh_frame      0x000043d4       0x74 libmthread_pic.a(queue.pico)
+                                 0x8c (size before relaxing)
+ .eh_frame      0x00004448       0xb8 libmthread_pic.a(mutex.pico)
+                                 0xd0 (size before relaxing)
+ .eh_frame      0x00004500       0x5c libmthread_pic.a(misc.pico)
+                                 0x74 (size before relaxing)
+ .eh_frame      0x0000455c       0xbc libmthread_pic.a(condition.pico)
+                                 0xd4 (size before relaxing)
+ .eh_frame      0x00004618      0x16c libmthread_pic.a(allocate.pico)
+                                0x184 (size before relaxing)
+ .eh_frame      0x00004784       0xb8 libmthread_pic.a(key.pico)
+                                 0xd0 (size before relaxing)
+ .eh_frame      0x0000483c      0x10c libmthread_pic.a(attribute.pico)
+                                0x124 (size before relaxing)
+ .eh_frame      0x00004948        0x4 /usr/lib/crtendS.o
+
+.note.minix.ident
+                0x0000494c       0x18
+ .note.minix.ident
+                0x0000494c       0x18 /usr/lib/crti.o
+
+.note.netbsd.pax
+                0x00004964       0x14
+ .note.netbsd.pax
+                0x00004964       0x14 /usr/lib/crti.o
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x00004978                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x00005000                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT(.init_array.*))
+ *(.init_array)
+
+.fini_array
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+
+.ctors          0x00005000        0xc
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ .ctors         0x00005000        0x4 /usr/lib/crtbeginS.o
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ .ctors         0x00005004        0x4 libmthread_pic.a(allocate.pico)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ .ctors         0x00005008        0x4 /usr/lib/crtendS.o
+                0x00005008                __CTOR_LIST_END__
+
+.dtors          0x0000500c        0x8
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ .dtors         0x0000500c        0x4 /usr/lib/crtbeginS.o
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ .dtors         0x00005010        0x4 /usr/lib/crtendS.o
+
+.jcr            0x00005014        0x4
+ *(.jcr)
+ .jcr           0x00005014        0x0 /usr/lib/crtbeginS.o
+ .jcr           0x00005014        0x4 /usr/lib/crtendS.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x00005018       0xa8
+ *(.dynamic)
+ .dynamic       0x00005018       0xa8 /usr/lib/crti.o
+                0x00005018                _DYNAMIC
+
+.got            0x000050c0       0x60
+ *(.got)
+ .got           0x000050c0       0x60 /usr/lib/crti.o
+ *(.igot)
+                0x00005120                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0xc)?0xc:0x0)
+
+.got.plt        0x00005120       0xd4
+ *(.got.plt)
+ .got.plt       0x00005120       0xd4 /usr/lib/crti.o
+                0x00005120                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+
+.data           0x000051f4       0x28
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x000051f4        0x0 /usr/lib/crti.o
+ .data          0x000051f4        0x0 /usr/lib/crtbeginS.o
+ .data.rel      0x000051f4       0x26 /usr/lib/crtbeginS.o
+                0x000051f4                __dso_handle
+ *fill*         0x0000521a        0x2 
+ .data          0x0000521c        0x0 libmthread_pic.a(pthread_compat.pico)
+ .data          0x0000521c        0x0 libmthread_pic.a(rwlock.pico)
+ .data          0x0000521c        0x0 libmthread_pic.a(event.pico)
+ .data          0x0000521c        0x0 libmthread_pic.a(scheduler.pico)
+ .data          0x0000521c        0x0 libmthread_pic.a(queue.pico)
+ .data          0x0000521c        0x0 libmthread_pic.a(mutex.pico)
+ .data          0x0000521c        0x0 libmthread_pic.a(misc.pico)
+ .data          0x0000521c        0x0 libmthread_pic.a(condition.pico)
+ .data          0x0000521c        0x0 libmthread_pic.a(allocate.pico)
+ .data          0x0000521c        0x0 libmthread_pic.a(key.pico)
+ .data          0x0000521c        0x0 libmthread_pic.a(attribute.pico)
+ .data          0x0000521c        0x0 /usr/lib/crtendS.o
+ .data          0x0000521c        0x0 /usr/lib/crtn.o
+
+.data1
+ *(.data1)
+                0x0000521c                _edata = .
+                0x0000521c                PROVIDE (edata, .)
+                0x0000521c                . = .
+                0x0000521c                __bss_start = .
+
+.bss            0x0000521c      0xd84
+ *(.dynbss)
+ .dynbss        0x00000000        0x0 /usr/lib/crti.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000521c        0x0 /usr/lib/crti.o
+ .bss           0x0000521c        0x0 /usr/lib/crtbeginS.o
+ .bss           0x0000521c        0x0 libmthread_pic.a(pthread_compat.pico)
+ .bss           0x0000521c        0x0 libmthread_pic.a(rwlock.pico)
+ .bss           0x0000521c        0x0 libmthread_pic.a(event.pico)
+ .bss           0x0000521c        0x1 libmthread_pic.a(scheduler.pico)
+ *fill*         0x0000521d        0x3 
+ .bss           0x00005220        0x0 libmthread_pic.a(queue.pico)
+ .bss           0x00005220        0x0 libmthread_pic.a(mutex.pico)
+ .bss           0x00005220        0x0 libmthread_pic.a(misc.pico)
+ .bss           0x00005220        0x0 libmthread_pic.a(condition.pico)
+ .bss           0x00005220        0x1 libmthread_pic.a(allocate.pico)
+ *fill*         0x00005221        0x3 
+ .bss           0x00005224      0xa01 libmthread_pic.a(key.pico)
+ *fill*         0x00005c25        0x3 
+ .bss           0x00005c28        0x8 libmthread_pic.a(attribute.pico)
+ .bss           0x00005c30        0x0 /usr/lib/crtendS.o
+ .bss           0x00005c30        0x0 /usr/lib/crtn.o
+ *(COMMON)
+ COMMON         0x00005c30      0x370 libmthread_pic.a(allocate.pico)
+                0x00005c30                running_main_thread
+                0x00005c34                run_queue
+                0x00005c3c                threads
+                0x00005c40                current_thread
+                0x00005c44                used_threads
+                0x00005c48                need_reset
+                0x00005c4c                mainthread
+                0x00005f94                free_threads
+                0x00005f9c                no_threads
+                0x00005fa0                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x00005fa0                . = ALIGN (0x4)
+                0x00005fa0                . = ALIGN (0x4)
+                0x00005fa0                _end = .
+                0x00005fa0                PROVIDE (end, .)
+                0x00005fa0                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x28
+ *(.comment)
+ .comment       0x00000000       0x28 libmthread_pic.a(pthread_compat.pico)
+                                 0x29 (size before relaxing)
+ .comment       0x00000000       0x29 libmthread_pic.a(rwlock.pico)
+ .comment       0x00000000       0x29 libmthread_pic.a(event.pico)
+ .comment       0x00000000       0x29 libmthread_pic.a(scheduler.pico)
+ .comment       0x00000000       0x29 libmthread_pic.a(queue.pico)
+ .comment       0x00000000       0x29 libmthread_pic.a(mutex.pico)
+ .comment       0x00000000       0x29 libmthread_pic.a(misc.pico)
+ .comment       0x00000000       0x29 libmthread_pic.a(condition.pico)
+ .comment       0x00000000       0x29 libmthread_pic.a(allocate.pico)
+ .comment       0x00000000       0x29 libmthread_pic.a(key.pico)
+ .comment       0x00000000       0x29 libmthread_pic.a(attribute.pico)
+
+.ident          0x00000000       0xde
+ .ident         0x00000000       0x36 /usr/lib/crti.o
+ .ident         0x00000036       0x3a /usr/lib/crtbeginS.o
+ .ident         0x00000070       0x38 /usr/lib/crtendS.o
+ .ident         0x000000a8       0x36 /usr/lib/crtn.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(libmthread.so.0.0 elf32-i386-minix)

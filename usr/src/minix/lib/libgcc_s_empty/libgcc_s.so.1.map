@@ -1,0 +1,353 @@
+Archive member included because of file (symbol)
+
+libgcc_s_pic.a(empty.pico)    (--whole-archive)
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x00000000        0x0 libgcc_s_pic.a(empty.pico)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/crti.o
+LOAD /usr/lib/crtbeginS.o
+LOAD libgcc_s_pic.a
+LOAD /usr/lib/crtendS.o
+LOAD /usr/lib/crtn.o
+                0x000000d4                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x000000d4       0x40
+ *(.hash)
+ .hash          0x000000d4       0x40 /usr/lib/crti.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000114       0xb0
+ *(.dynsym)
+ .dynsym        0x00000114       0xb0 /usr/lib/crti.o
+
+.dynstr         0x000001c4       0x8c
+ *(.dynstr)
+ .dynstr        0x000001c4       0x8c /usr/lib/crti.o
+
+.gnu.version    0x00000250       0x16
+ *(.gnu.version)
+ .gnu.version   0x00000250       0x16 /usr/lib/crti.o
+
+.gnu.version_d  0x00000268       0x38
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000268       0x38 /usr/lib/crti.o
+
+.gnu.version_r  0x000002a0        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000        0x0 /usr/lib/crti.o
+
+.rel.dyn        0x000002a0       0x28
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ .rel.data.rel  0x000002a0        0x8 /usr/lib/crti.o
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x000002a8       0x20 /usr/lib/crti.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rel.ifunc)
+ .rel.ifunc     0x00000000        0x0 /usr/lib/crti.o
+
+.rel.plt        0x000002c8       0x20
+ *(.rel.plt)
+ .rel.plt       0x000002c8       0x20 /usr/lib/crti.o
+ *(.rel.iplt)
+
+.init           0x000002f0        0xa
+ *(SORT(.init))
+ .init          0x000002f0        0x3 /usr/lib/crti.o
+                0x000002f0                _init
+ .init          0x000002f3        0x5 /usr/lib/crtbeginS.o
+ .init          0x000002f8        0x2 /usr/lib/crtn.o
+
+.plt            0x00000300       0x50
+ *(.plt)
+ .plt           0x00000300       0x50 /usr/lib/crti.o
+ *(.iplt)
+
+.text           0x00000350       0xf0
+                0x00000350                PROVIDE (__eprol, .)
+ *(.text.unlikely .text.*_unlikely)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00000350        0x0 /usr/lib/crti.o
+ .text          0x00000350       0xef /usr/lib/crtbeginS.o
+ *fill*         0x0000043f        0x1 
+ .text          0x00000440        0x0 libgcc_s_pic.a(empty.pico)
+ .text          0x00000440        0x0 /usr/lib/crtendS.o
+ .text          0x00000440        0x0 /usr/lib/crtn.o
+ *(.gnu.warning)
+
+.fini           0x00000440        0xa
+ *(SORT(.fini))
+ .fini          0x00000440        0x3 /usr/lib/crti.o
+                0x00000440                _fini
+ .fini          0x00000443        0x5 /usr/lib/crtbeginS.o
+ .fini          0x00000448        0x2 /usr/lib/crtn.o
+                0x0000044a                PROVIDE (__etext, .)
+                0x0000044a                PROVIDE (_etext, .)
+                0x0000044a                PROVIDE (etext, .)
+
+.rodata
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+
+.note.minix.ident
+                0x0000044c       0x18
+ .note.minix.ident
+                0x0000044c       0x18 /usr/lib/crti.o
+
+.note.netbsd.pax
+                0x00000464       0x14
+ .note.netbsd.pax
+                0x00000464       0x14 /usr/lib/crti.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x00000478        0x0
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x00000000        0x0 /usr/lib/crtn.o
+
+.eh_frame       0x00000478        0x4
+ *(.eh_frame)
+ .eh_frame      0x00000000        0x0 /usr/lib/crti.o
+ .eh_frame      0x00000478        0x0 /usr/lib/crtbeginS.o
+ .eh_frame      0x00000478        0x4 /usr/lib/crtendS.o
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x0000047c                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x0000147c                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT(.init_array.*))
+ *(.init_array)
+
+.fini_array
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+
+.ctors          0x0000147c        0x8
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ .ctors         0x0000147c        0x4 /usr/lib/crtbeginS.o
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ .ctors         0x00001480        0x4 /usr/lib/crtendS.o
+                0x00001480                __CTOR_LIST_END__
+
+.dtors          0x00001484        0x8
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ .dtors         0x00001484        0x4 /usr/lib/crtbeginS.o
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ .dtors         0x00001488        0x4 /usr/lib/crtendS.o
+
+.jcr            0x0000148c        0x4
+ *(.jcr)
+ .jcr           0x0000148c        0x0 /usr/lib/crtbeginS.o
+ .jcr           0x0000148c        0x4 /usr/lib/crtendS.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x00001490       0xc0
+ *(.dynamic)
+ .dynamic       0x00001490       0xc0 /usr/lib/crti.o
+                0x00001490                _DYNAMIC
+
+.got            0x00001550       0x10
+ *(.got)
+ .got           0x00001550       0x10 /usr/lib/crti.o
+ *(.igot)
+                0x00001560                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0xc)?0xc:0x0)
+
+.got.plt        0x00001560       0x1c
+ *(.got.plt)
+ .got.plt       0x00001560       0x1c /usr/lib/crti.o
+                0x00001560                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+
+.data           0x0000157c       0x28
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000157c        0x0 /usr/lib/crti.o
+ .data          0x0000157c        0x0 /usr/lib/crtbeginS.o
+ .data.rel      0x0000157c       0x26 /usr/lib/crtbeginS.o
+                0x0000157c                __dso_handle
+ *fill*         0x000015a2        0x2 
+ .data          0x000015a4        0x0 libgcc_s_pic.a(empty.pico)
+ .data          0x000015a4        0x0 /usr/lib/crtendS.o
+ .data          0x000015a4        0x0 /usr/lib/crtn.o
+
+.data1
+ *(.data1)
+                0x000015a4                _edata = .
+                0x000015a4                PROVIDE (edata, .)
+                0x000015a4                . = .
+                0x000015a4                __bss_start = .
+
+.bss            0x000015a4        0x0
+ *(.dynbss)
+ .dynbss        0x00000000        0x0 /usr/lib/crti.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000015a4        0x0 /usr/lib/crti.o
+ .bss           0x000015a4        0x0 /usr/lib/crtbeginS.o
+ .bss           0x000015a4        0x0 libgcc_s_pic.a(empty.pico)
+ .bss           0x000015a4        0x0 /usr/lib/crtendS.o
+ .bss           0x000015a4        0x0 /usr/lib/crtn.o
+ *(COMMON)
+                0x000015a4                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x000015a4                . = ALIGN (0x4)
+                0x000015a4                . = ALIGN (0x4)
+                0x000015a4                _end = .
+                0x000015a4                PROVIDE (end, .)
+                0x000015a4                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x28
+ *(.comment)
+ .comment       0x00000000       0x28 libgcc_s_pic.a(empty.pico)
+                                 0x29 (size before relaxing)
+
+.ident          0x00000000       0xde
+ .ident         0x00000000       0x36 /usr/lib/crti.o
+ .ident         0x00000036       0x3a /usr/lib/crtbeginS.o
+ .ident         0x00000070       0x38 /usr/lib/crtendS.o
+ .ident         0x000000a8       0x36 /usr/lib/crtn.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(libgcc_s.so.1.0 elf32-i386-minix)

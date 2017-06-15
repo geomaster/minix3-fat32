@@ -1,0 +1,2100 @@
+Archive member included because of file (symbol)
+
+libsys_pic.a(pci_slot_name.pico)
+                              (--whole-archive)
+libsys_pic.a(pci_set_acl.pico)
+                              (--whole-archive)
+libsys_pic.a(pci_reserve.pico)
+                              (--whole-archive)
+libsys_pic.a(pci_rescan_bus.pico)
+                              (--whole-archive)
+libsys_pic.a(pci_next_dev.pico)
+                              (--whole-archive)
+libsys_pic.a(pci_ids.pico)    (--whole-archive)
+libsys_pic.a(pci_get_bar.pico)
+                              (--whole-archive)
+libsys_pic.a(pci_first_dev.pico)
+                              (--whole-archive)
+libsys_pic.a(pci_find_dev.pico)
+                              (--whole-archive)
+libsys_pic.a(pci_dev_name.pico)
+                              (--whole-archive)
+libsys_pic.a(pci_del_acl.pico)
+                              (--whole-archive)
+libsys_pic.a(pci_attr_w8.pico)
+                              (--whole-archive)
+libsys_pic.a(pci_attr_w32.pico)
+                              (--whole-archive)
+libsys_pic.a(pci_attr_w16.pico)
+                              (--whole-archive)
+libsys_pic.a(pci_attr_r8.pico)
+                              (--whole-archive)
+libsys_pic.a(pci_attr_r32.pico)
+                              (--whole-archive)
+libsys_pic.a(pci_attr_r16.pico)
+                              (--whole-archive)
+libsys_pic.a(vm_set_priv.pico)
+                              (--whole-archive)
+libsys_pic.a(vm_query_exit.pico)
+                              (--whole-archive)
+libsys_pic.a(vm_procctl.pico)
+                              (--whole-archive)
+libsys_pic.a(vm_notify_sig.pico)
+                              (--whole-archive)
+libsys_pic.a(vm_memctl.pico)  (--whole-archive)
+libsys_pic.a(vm_map_phys.pico)
+                              (--whole-archive)
+libsys_pic.a(vm_info.pico)    (--whole-archive)
+libsys_pic.a(vm_fork.pico)    (--whole-archive)
+libsys_pic.a(vm_exit.pico)    (--whole-archive)
+libsys_pic.a(vm_cache.pico)   (--whole-archive)
+libsys_pic.a(timers.pico)     (--whole-archive)
+libsys_pic.a(sys_vumap.pico)  (--whole-archive)
+libsys_pic.a(sys_vtimer.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_vsafecopy.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_vmctl.pico)  (--whole-archive)
+libsys_pic.a(sys_vircopy.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_update.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_trace.pico)  (--whole-archive)
+libsys_pic.a(sys_stime.pico)  (--whole-archive)
+libsys_pic.a(sys_statectl.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_sprof.pico)  (--whole-archive)
+libsys_pic.a(sys_sigsend.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_sigreturn.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_settime.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_setalarm.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_schedule.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_safememset.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_safecopy.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_runctl.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_privctl.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_physcopy.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_padconf.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_memset.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_mcontext.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_kill.pico)   (--whole-archive)
+libsys_pic.a(sys_irqctl.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_fork.pico)   (--whole-archive)
+libsys_pic.a(sys_exec.pico)   (--whole-archive)
+libsys_pic.a(sys_cprof.pico)  (--whole-archive)
+libsys_pic.a(sys_clear.pico)  (--whole-archive)
+libsys_pic.a(sys_abort.pico)  (--whole-archive)
+libsys_pic.a(srv_kill.pico)   (--whole-archive)
+libsys_pic.a(srv_fork.pico)   (--whole-archive)
+libsys_pic.a(sqrt_approx.pico)
+                              (--whole-archive)
+libsys_pic.a(sched_stop.pico)
+                              (--whole-archive)
+libsys_pic.a(sched_start.pico)
+                              (--whole-archive)
+libsys_pic.a(optset.pico)     (--whole-archive)
+libsys_pic.a(mapdriver.pico)  (--whole-archive)
+libsys_pic.a(kputs.pico)      (--whole-archive)
+libsys_pic.a(kputc.pico)      (--whole-archive)
+libsys_pic.a(getuptime.pico)  (--whole-archive)
+libsys_pic.a(getsysinfo.pico)
+                              (--whole-archive)
+libsys_pic.a(getprocnr.pico)  (--whole-archive)
+libsys_pic.a(getepinfo.pico)  (--whole-archive)
+libsys_pic.a(fkey_ctl.pico)   (--whole-archive)
+libsys_pic.a(env_prefix.pico)
+                              (--whole-archive)
+libsys_pic.a(env_parse.pico)  (--whole-archive)
+libsys_pic.a(env_panic.pico)  (--whole-archive)
+libsys_pic.a(env_get_prm.pico)
+                              (--whole-archive)
+libsys_pic.a(copyfd.pico)     (--whole-archive)
+libsys_pic.a(checkperms.pico)
+                              (--whole-archive)
+libsys_pic.a(asynsend.pico)   (--whole-archive)
+libsys_pic.a(alloc_util.pico)
+                              (--whole-archive)
+libsys_pic.a(vbox.pico)       (--whole-archive)
+libsys_pic.a(timing.pico)     (--whole-archive)
+libsys_pic.a(sys_voutw.pico)  (--whole-archive)
+libsys_pic.a(sys_voutl.pico)  (--whole-archive)
+libsys_pic.a(sys_voutb.pico)  (--whole-archive)
+libsys_pic.a(sys_vinw.pico)   (--whole-archive)
+libsys_pic.a(sys_vinl.pico)   (--whole-archive)
+libsys_pic.a(sys_vinb.pico)   (--whole-archive)
+libsys_pic.a(sys_umap_remote.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_sdevio.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_readbios.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_int86.pico)  (--whole-archive)
+libsys_pic.a(sys_eniop.pico)  (--whole-archive)
+libsys_pic.a(spin.pico)       (--whole-archive)
+libsys_pic.a(ser_putc.pico)   (--whole-archive)
+libsys_pic.a(profile.pico)    (--whole-archive)
+libsys_pic.a(getidle.pico)    (--whole-archive)
+libsys_pic.a(get_randomness.pico)
+                              (--whole-archive)
+libsys_pic.a(pci_init.pico)   (--whole-archive)
+libsys_pic.a(sys_umap.pico)   (--whole-archive)
+libsys_pic.a(sys_schedctl.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_diagctl.pico)
+                              (--whole-archive)
+libsys_pic.a(getticks.pico)   (--whole-archive)
+libsys_pic.a(ds.pico)         (--whole-archive)
+libsys_pic.a(tsc_util.pico)   (--whole-archive)
+libsys_pic.a(sys_out.pico)    (--whole-archive)
+libsys_pic.a(sys_in.pico)     (--whole-archive)
+libsys_pic.a(profile_extern.pico)
+                              (--whole-archive)
+libsys_pic.a(tickdelay.pico)  (--whole-archive)
+libsys_pic.a(sys_profbuf.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_hz.pico)     (--whole-archive)
+libsys_pic.a(safecopies.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_setgrant.pico)
+                              (--whole-archive)
+libsys_pic.a(sef_signal.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_getsig.pico)
+                              (--whole-archive)
+libsys_pic.a(sys_endsig.pico)
+                              (--whole-archive)
+libsys_pic.a(sef_liveupdate.pico)
+                              (--whole-archive)
+libsys_pic.a(sef_init.pico)   (--whole-archive)
+libsys_pic.a(sef.pico)        (--whole-archive)
+libsys_pic.a(vm_update.pico)  (--whole-archive)
+libsys_pic.a(taskcall.pico)   (--whole-archive)
+libsys_pic.a(sys_times.pico)  (--whole-archive)
+libsys_pic.a(sys_exit.pico)   (--whole-archive)
+libsys_pic.a(sef_ping.pico)   (--whole-archive)
+libsys_pic.a(sef_fi.pico)     (--whole-archive)
+libsys_pic.a(assert.pico)     (--whole-archive)
+libsys_pic.a(panic.pico)      (--whole-archive)
+libsys_pic.a(sys_getinfo.pico)
+                              (--whole-archive)
+libsys_pic.a(stacktrace.pico)
+                              (--whole-archive)
+libsys_pic.a(kprintf.pico)    (--whole-archive)
+libsys_pic.a(kernel_call.pico)
+                              (--whole-archive)
+
+Allocating common symbols
+Common symbol       size              file
+
+sef_self_receiving  0x4               libsys_pic.a(sef.pico)
+sef_self_priv_flags
+                    0x4               libsys_pic.a(sef.pico)
+cprof_tbl           0xc7380           libsys_pic.a(profile_extern.pico)
+sef_self_name       0x14              libsys_pic.a(sef.pico)
+sef_self_first_receive_done
+                    0x4               libsys_pic.a(sef.pico)
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(pci_slot_name.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(pci_set_acl.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(pci_reserve.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(pci_rescan_bus.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(pci_next_dev.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(pci_ids.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(pci_get_bar.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(pci_first_dev.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(pci_find_dev.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(pci_dev_name.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(pci_del_acl.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(pci_attr_w8.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(pci_attr_w32.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(pci_attr_w16.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(pci_attr_r8.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(pci_attr_r32.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(pci_attr_r16.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(vm_set_priv.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(vm_query_exit.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(vm_procctl.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(vm_notify_sig.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(vm_memctl.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(vm_map_phys.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(vm_info.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(vm_fork.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(vm_exit.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(vm_cache.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(timers.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_vumap.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_vtimer.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_vsafecopy.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_vmctl.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_vircopy.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_update.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_trace.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_stime.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_statectl.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_sprof.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_sigsend.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_sigreturn.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_settime.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_setalarm.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_schedule.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_safememset.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_safecopy.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_runctl.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_privctl.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_physcopy.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_padconf.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_memset.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_mcontext.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_kill.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_irqctl.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_fork.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_exec.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_cprof.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_clear.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_abort.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(srv_kill.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(srv_fork.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sqrt_approx.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sched_stop.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sched_start.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(optset.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(mapdriver.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(kputs.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(kputc.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(getuptime.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(getsysinfo.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(getprocnr.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(getepinfo.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(fkey_ctl.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(env_prefix.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(env_parse.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(env_panic.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(env_get_prm.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(copyfd.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(checkperms.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(asynsend.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(alloc_util.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(vbox.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(timing.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_voutw.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_voutl.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_voutb.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_vinw.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_vinl.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_vinb.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_umap_remote.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_sdevio.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_readbios.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_int86.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_eniop.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(spin.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(ser_putc.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(profile.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(getidle.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(get_randomness.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(pci_init.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_umap.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_schedctl.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_diagctl.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(getticks.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(ds.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(tsc_util.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_out.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_in.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(profile_extern.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(tickdelay.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_profbuf.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_hz.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(safecopies.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_setgrant.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sef_signal.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_getsig.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_endsig.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sef_liveupdate.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sef_init.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sef.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(vm_update.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(taskcall.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_times.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_exit.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sef_ping.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sef_fi.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(assert.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(panic.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(sys_getinfo.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(stacktrace.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(kprintf.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libsys_pic.a(kernel_call.pico)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/crti.o
+LOAD /usr/lib/crtbeginS.o
+LOAD libsys_pic.a
+LOAD /usr/lib/crtendS.o
+LOAD /usr/lib/crtn.o
+                0x000000f4                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x000000f4      0x8d8
+ *(.hash)
+ .hash          0x000000f4      0x8d8 /usr/lib/crti.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x000009cc     0x12d0
+ *(.dynsym)
+ .dynsym        0x000009cc     0x12d0 /usr/lib/crti.o
+
+.dynstr         0x00001c9c     0x105b
+ *(.dynstr)
+ .dynstr        0x00001c9c     0x105b /usr/lib/crti.o
+
+.gnu.version    0x00002cf8        0x0
+ *(.gnu.version)
+ .gnu.version   0x00000000        0x0 /usr/lib/crti.o
+
+.gnu.version_d  0x00002cf8        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000        0x0 /usr/lib/crti.o
+
+.gnu.version_r  0x00002cf8        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000        0x0 /usr/lib/crti.o
+
+.rel.dyn        0x00002cf8      0x100
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ .rel.data.rel  0x00002cf8       0x70 /usr/lib/crti.o
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x00002d68       0x90 /usr/lib/crti.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rel.ifunc)
+ .rel.ifunc     0x00000000        0x0 /usr/lib/crti.o
+
+.rel.plt        0x00002df8      0x268
+ *(.rel.plt)
+ .rel.plt       0x00002df8      0x268 /usr/lib/crti.o
+ *(.rel.iplt)
+
+.init           0x00003060        0xa
+ *(SORT(.init))
+ .init          0x00003060        0x3 /usr/lib/crti.o
+                0x00003060                _init
+ .init          0x00003063        0x5 /usr/lib/crtbeginS.o
+ .init          0x00003068        0x2 /usr/lib/crtn.o
+
+.plt            0x00003070      0x4e0
+ *(.plt)
+ .plt           0x00003070      0x4e0 /usr/lib/crti.o
+ *(.iplt)
+
+.text           0x00003550     0x8ae4
+                0x00003550                PROVIDE (__eprol, .)
+ *(.text.unlikely .text.*_unlikely)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00003550        0x0 /usr/lib/crti.o
+ .text          0x00003550       0xef /usr/lib/crtbeginS.o
+ *fill*         0x0000363f        0x1 
+ .text          0x00003640       0xeb libsys_pic.a(pci_slot_name.pico)
+                0x00003640                pci_slot_name
+ *fill*         0x0000372b        0x5 
+ .text          0x00003730       0xf4 libsys_pic.a(pci_set_acl.pico)
+                0x00003730                pci_set_acl
+ *fill*         0x00003824        0xc 
+ .text          0x00003830       0xc6 libsys_pic.a(pci_reserve.pico)
+                0x00003830                pci_reserve
+                0x000038b0                pci_reserve_ok
+ *fill*         0x000038f6        0xa 
+ .text          0x00003900       0x7b libsys_pic.a(pci_rescan_bus.pico)
+                0x00003900                pci_rescan_bus
+ *fill*         0x0000397b        0x5 
+ .text          0x00003980       0xa6 libsys_pic.a(pci_next_dev.pico)
+                0x00003980                pci_next_dev
+ *fill*         0x00003a26        0xa 
+ .text          0x00003a30       0xab libsys_pic.a(pci_ids.pico)
+                0x00003a30                pci_ids
+ *fill*         0x00003adb        0x5 
+ .text          0x00003ae0       0x8e libsys_pic.a(pci_get_bar.pico)
+                0x00003ae0                pci_get_bar
+ *fill*         0x00003b6e        0x2 
+ .text          0x00003b70       0xa0 libsys_pic.a(pci_first_dev.pico)
+                0x00003b70                pci_first_dev
+ .text          0x00003c10       0xda libsys_pic.a(pci_find_dev.pico)
+                0x00003c10                pci_find_dev
+ *fill*         0x00003cea        0x6 
+ .text          0x00003cf0      0x101 libsys_pic.a(pci_dev_name.pico)
+                0x00003cf0                pci_dev_name
+ *fill*         0x00003df1        0xf 
+ .text          0x00003e00       0x9f libsys_pic.a(pci_del_acl.pico)
+                0x00003e00                pci_del_acl
+ *fill*         0x00003e9f        0x1 
+ .text          0x00003ea0       0x89 libsys_pic.a(pci_attr_w8.pico)
+                0x00003ea0                pci_attr_w8
+ *fill*         0x00003f29        0x7 
+ .text          0x00003f30       0x88 libsys_pic.a(pci_attr_w32.pico)
+                0x00003f30                pci_attr_w32
+ *fill*         0x00003fb8        0x8 
+ .text          0x00003fc0       0x89 libsys_pic.a(pci_attr_w16.pico)
+                0x00003fc0                pci_attr_w16
+ *fill*         0x00004049        0x7 
+ .text          0x00004050       0x86 libsys_pic.a(pci_attr_r8.pico)
+                0x00004050                pci_attr_r8
+ *fill*         0x000040d6        0xa 
+ .text          0x000040e0       0x85 libsys_pic.a(pci_attr_r32.pico)
+                0x000040e0                pci_attr_r32
+ *fill*         0x00004165        0xb 
+ .text          0x00004170       0x86 libsys_pic.a(pci_attr_r16.pico)
+                0x00004170                pci_attr_r16
+ *fill*         0x000041f6        0xa 
+ .text          0x00004200       0x6a libsys_pic.a(vm_set_priv.pico)
+                0x00004200                vm_set_priv
+ *fill*         0x0000426a        0x6 
+ .text          0x00004270       0xde libsys_pic.a(vm_query_exit.pico)
+                0x00004270                vm_query_exit
+                0x000042f0                vm_watch_exit
+ *fill*         0x0000434e        0x2 
+ .text          0x00004350       0xfb libsys_pic.a(vm_procctl.pico)
+                0x00004350                vm_procctl_clear
+                0x000043d0                vm_procctl_handlemem
+ *fill*         0x0000444b        0x5 
+ .text          0x00004450       0x63 libsys_pic.a(vm_notify_sig.pico)
+                0x00004450                vm_notify_sig
+ *fill*         0x000044b3        0xd 
+ .text          0x000044c0       0x63 libsys_pic.a(vm_memctl.pico)
+                0x000044c0                vm_memctl
+ *fill*         0x00004523        0xd 
+ .text          0x00004530       0xe5 libsys_pic.a(vm_map_phys.pico)
+                0x00004530                vm_map_phys
+                0x000045b0                vm_unmap_phys
+ *fill*         0x00004615        0xb 
+ .text          0x00004620      0x16b libsys_pic.a(vm_info.pico)
+                0x00004620                vm_info_stats
+                0x00004690                vm_info_usage
+                0x00004700                vm_info_region
+ *fill*         0x0000478b        0x5 
+ .text          0x00004790       0x6c libsys_pic.a(vm_fork.pico)
+                0x00004790                vm_fork
+ *fill*         0x000047fc        0x4 
+ .text          0x00004800       0xbe libsys_pic.a(vm_exit.pico)
+                0x00004800                vm_exit
+                0x00004860                vm_willexit
+ *fill*         0x000048be        0x2 
+ .text          0x000048c0      0x318 libsys_pic.a(vm_cache.pico)
+                0x000048c0                vm_cachecall
+                0x00004a10                vm_map_cacheblock
+                0x00004ab0                vm_set_cacheblock
+                0x00004b40                vm_clear_cache
+ *fill*         0x00004bd8        0x8 
+ .text          0x00004be0      0x19c libsys_pic.a(timers.pico)
+                0x00004be0                init_timer
+                0x00004c00                set_timer
+                0x00004ca0                cancel_timer
+                0x00004d10                expire_timers
+ *fill*         0x00004d7c        0x4 
+ .text          0x00004d80       0x74 libsys_pic.a(sys_vumap.pico)
+                0x00004d80                sys_vumap
+ *fill*         0x00004df4        0xc 
+ .text          0x00004e00       0x6f libsys_pic.a(sys_vtimer.pico)
+                0x00004e00                sys_vtimer
+ *fill*         0x00004e6f        0x1 
+ .text          0x00004e70       0x41 libsys_pic.a(sys_vsafecopy.pico)
+                0x00004e70                sys_vsafecopy
+ *fill*         0x00004eb1        0xf 
+ .text          0x00004ec0      0x241 libsys_pic.a(sys_vmctl.pico)
+                0x00004ec0                sys_vmctl
+                0x00004f10                sys_vmctl_get_pdbr
+                0x00004f60                sys_vmctl_set_addrspace
+                0x00004fb0                sys_vmctl_get_memreq
+                0x00005040                sys_vmctl_get_mapping
+                0x000050b0                sys_vmctl_reply_mapping
+ *fill*         0x00005101        0xf 
+ .text          0x00005110       0x7f libsys_pic.a(sys_vircopy.pico)
+                0x00005110                sys_vircopy
+ *fill*         0x0000518f        0x1 
+ .text          0x00005190       0x41 libsys_pic.a(sys_update.pico)
+                0x00005190                sys_update
+ *fill*         0x000051d1        0xf 
+ .text          0x000051e0       0x73 libsys_pic.a(sys_trace.pico)
+                0x000051e0                sys_trace
+ *fill*         0x00005253        0xd 
+ .text          0x00005260       0x41 libsys_pic.a(sys_stime.pico)
+                0x00005260                sys_stime
+ *fill*         0x000052a1        0xf 
+ .text          0x000052b0       0x3a libsys_pic.a(sys_statectl.pico)
+                0x000052b0                sys_statectl
+ *fill*         0x000052ea        0x2 
+ .text          0x000052ec        0x0 libsys_pic.a(sys_sprof.pico)
+ *fill*         0x000052ec        0x4 
+ .text          0x000052f0       0x41 libsys_pic.a(sys_sigsend.pico)
+                0x000052f0                sys_sigsend
+ *fill*         0x00005331        0xf 
+ .text          0x00005340       0x41 libsys_pic.a(sys_sigreturn.pico)
+                0x00005340                sys_sigreturn
+ *fill*         0x00005381        0xf 
+ .text          0x00005390       0x56 libsys_pic.a(sys_settime.pico)
+                0x00005390                sys_settime
+ *fill*         0x000053e6        0xa 
+ .text          0x000053f0       0x41 libsys_pic.a(sys_setalarm.pico)
+                0x000053f0                sys_setalarm
+ *fill*         0x00005431        0xf 
+ .text          0x00005440       0x4f libsys_pic.a(sys_schedule.pico)
+                0x00005440                sys_schedule
+ *fill*         0x0000548f        0x1 
+ .text          0x00005490       0x56 libsys_pic.a(sys_safememset.pico)
+                0x00005490                sys_safememset
+ *fill*         0x000054e6        0xa 
+ .text          0x000054f0       0xba libsys_pic.a(sys_safecopy.pico)
+                0x000054f0                sys_safecopyfrom
+                0x00005550                sys_safecopyto
+ *fill*         0x000055aa        0x6 
+ .text          0x000055b0       0x48 libsys_pic.a(sys_runctl.pico)
+                0x000055b0                sys_runctl
+ *fill*         0x000055f8        0x8 
+ .text          0x00005600       0xa0 libsys_pic.a(sys_privctl.pico)
+                0x00005600                sys_privctl
+                0x00005650                sys_privquery_mem
+ .text          0x000056a0       0x67 libsys_pic.a(sys_physcopy.pico)
+                0x000056a0                sys_physcopy
+ *fill*         0x00005707        0x9 
+ .text          0x00005710       0x48 libsys_pic.a(sys_padconf.pico)
+                0x00005710                sys_padconf
+ *fill*         0x00005758        0x8 
+ .text          0x00005760       0x57 libsys_pic.a(sys_memset.pico)
+                0x00005760                sys_memset
+ *fill*         0x000057b7        0x9 
+ .text          0x000057c0       0x91 libsys_pic.a(sys_mcontext.pico)
+                0x000057c0                sys_getmcontext
+                0x00005810                sys_setmcontext
+ *fill*         0x00005851        0xf 
+ .text          0x00005860       0x41 libsys_pic.a(sys_kill.pico)
+                0x00005860                sys_kill
+ *fill*         0x000058a1        0xf 
+ .text          0x000058b0       0x68 libsys_pic.a(sys_irqctl.pico)
+                0x000058b0                sys_irqctl
+ *fill*         0x00005918        0x8 
+ .text          0x00005920       0x5a libsys_pic.a(sys_fork.pico)
+                0x00005920                sys_fork
+ *fill*         0x0000597a        0x6 
+ .text          0x00005980       0x56 libsys_pic.a(sys_exec.pico)
+                0x00005980                sys_exec
+ *fill*         0x000059d6        0xa 
+ .text          0x000059e0       0x56 libsys_pic.a(sys_cprof.pico)
+                0x000059e0                sys_cprof
+ *fill*         0x00005a36        0xa 
+ .text          0x00005a40       0x3a libsys_pic.a(sys_clear.pico)
+                0x00005a40                sys_clear
+ *fill*         0x00005a7a        0x6 
+ .text          0x00005a80       0x3a libsys_pic.a(sys_abort.pico)
+                0x00005a80                sys_abort
+ *fill*         0x00005aba        0x6 
+ .text          0x00005ac0       0x63 libsys_pic.a(srv_kill.pico)
+                0x00005ac0                srv_kill
+ *fill*         0x00005b23        0xd 
+ .text          0x00005b30       0x63 libsys_pic.a(srv_fork.pico)
+                0x00005b30                srv_fork
+ *fill*         0x00005b93        0xd 
+ .text          0x00005ba0      0x11f libsys_pic.a(sqrt_approx.pico)
+                0x00005ba0                sqrt_approx
+ *fill*         0x00005cbf        0x1 
+ .text          0x00005cc0       0xe9 libsys_pic.a(sched_stop.pico)
+                0x00005cc0                sched_stop
+ *fill*         0x00005da9        0x7 
+ .text          0x00005db0      0x3d4 libsys_pic.a(sched_start.pico)
+                0x00005db0                sched_inherit
+                0x00005f60                sched_start
+ *fill*         0x00006184        0xc 
+ .text          0x00006190      0x1e5 libsys_pic.a(optset.pico)
+                0x00006190                optset_parse
+ *fill*         0x00006375        0xb 
+ .text          0x00006380       0x70 libsys_pic.a(mapdriver.pico)
+                0x00006380                mapdriver
+ .text          0x000063f0       0x53 libsys_pic.a(kputs.pico)
+                0x000063f0                puts
+ *fill*         0x00006443        0xd 
+ .text          0x00006450       0x73 libsys_pic.a(kputc.pico)
+                0x00006450                kputc
+ *fill*         0x000064c3        0xd 
+ .text          0x000064d0       0x65 libsys_pic.a(getuptime.pico)
+                0x000064d0                getuptime
+ *fill*         0x00006535        0xb 
+ .text          0x00006540       0x9c libsys_pic.a(getsysinfo.pico)
+                0x00006540                getsysinfo
+ *fill*         0x000065dc        0x4 
+ .text          0x000065e0       0x69 libsys_pic.a(getprocnr.pico)
+                0x000065e0                getprocnr
+ *fill*         0x00006649        0x7 
+ .text          0x00006650      0x1e8 libsys_pic.a(getepinfo.pico)
+                0x00006650                getnpid
+                0x000066b0                getnuid
+                0x00006720                getngid
+                0x00006790                getnucred
+ *fill*         0x00006838        0x8 
+ .text          0x00006840       0x99 libsys_pic.a(fkey_ctl.pico)
+                0x00006840                fkey_ctl
+ *fill*         0x000068d9        0x7 
+ .text          0x000068e0       0xc5 libsys_pic.a(env_prefix.pico)
+                0x000068e0                env_prefix
+ *fill*         0x000069a5        0xb 
+ .text          0x000069b0      0x22d libsys_pic.a(env_parse.pico)
+                0x000069b0                env_parse
+ *fill*         0x00006bdd        0x3 
+ .text          0x00006be0       0x62 libsys_pic.a(env_panic.pico)
+                0x00006be0                env_panic
+ *fill*         0x00006c42        0xe 
+ .text          0x00006c50      0x1fe libsys_pic.a(env_get_prm.pico)
+                0x00006c50                env_setargs
+                0x00006c80                env_get_param
+ *fill*         0x00006e4e        0x2 
+ .text          0x00006e50       0x6a libsys_pic.a(copyfd.pico)
+                0x00006e50                copyfd
+ *fill*         0x00006eba        0x6 
+ .text          0x00006ec0       0xa3 libsys_pic.a(checkperms.pico)
+                0x00006ec0                checkperms
+ *fill*         0x00006f63        0xd 
+ .text          0x00006f70      0x3cd libsys_pic.a(asynsend.pico)
+                0x00006f70                asynsend3
+                0x000072a0                asyn_geterror
+ *fill*         0x0000733d        0x3 
+ .text          0x00007340       0xe8 libsys_pic.a(alloc_util.pico)
+                0x00007340                alloc_contig
+                0x00007410                free_contig
+ *fill*         0x00007428        0x8 
+ .text          0x00007430      0x613 libsys_pic.a(vbox.pico)
+                0x00007430                vbox_init
+                0x00007480                vbox_open
+                0x00007570                vbox_close
+                0x00007610                vbox_call
+                0x00007810                vbox_put
+                0x00007860                vbox_set_u32
+                0x00007880                vbox_set_u64
+                0x000078a0                vbox_set_ptr
+                0x00007930                vbox_set_grant
+                0x000079a0                vbox_get_u32
+                0x000079f0                vbox_get_u64
+ *fill*         0x00007a43        0xd 
+ .text          0x00007a50      0x20e libsys_pic.a(timing.pico)
+                0x00007a50                util_timer_start
+                0x00007ad0                util_timer_end
+ *fill*         0x00007c5e        0x2 
+ .text          0x00007c60       0x49 libsys_pic.a(sys_voutw.pico)
+                0x00007c60                sys_voutw
+ *fill*         0x00007ca9        0x7 
+ .text          0x00007cb0       0x49 libsys_pic.a(sys_voutl.pico)
+                0x00007cb0                sys_voutl
+ *fill*         0x00007cf9        0x7 
+ .text          0x00007d00       0x49 libsys_pic.a(sys_voutb.pico)
+                0x00007d00                sys_voutb
+ *fill*         0x00007d49        0x7 
+ .text          0x00007d50       0x49 libsys_pic.a(sys_vinw.pico)
+                0x00007d50                sys_vinw
+ *fill*         0x00007d99        0x7 
+ .text          0x00007da0       0x49 libsys_pic.a(sys_vinl.pico)
+                0x00007da0                sys_vinl
+ *fill*         0x00007de9        0x7 
+ .text          0x00007df0       0x49 libsys_pic.a(sys_vinb.pico)
+                0x00007df0                sys_vinb
+ *fill*         0x00007e39        0x7 
+ .text          0x00007e40       0x5f libsys_pic.a(sys_umap_remote.pico)
+                0x00007e40                sys_umap_remote
+ *fill*         0x00007e9f        0x1 
+ .text          0x00007ea0       0x5d libsys_pic.a(sys_sdevio.pico)
+                0x00007ea0                sys_sdevio
+ *fill*         0x00007efd        0x3 
+ .text          0x00007f00       0x48 libsys_pic.a(sys_readbios.pico)
+                0x00007f00                sys_readbios
+ *fill*         0x00007f48        0x8 
+ .text          0x00007f50       0x3a libsys_pic.a(sys_int86.pico)
+                0x00007f50                sys_int86
+ *fill*         0x00007f8a        0x6 
+ .text          0x00007f90       0x3a libsys_pic.a(sys_eniop.pico)
+                0x00007f90                sys_enable_iop
+ *fill*         0x00007fca        0x6 
+ .text          0x00007fd0      0x123 libsys_pic.a(spin.pico)
+                0x00007fd0                spin_init
+                0x00007ff0                spin_check
+ *fill*         0x000080f3        0xd 
+ .text          0x00008100       0x6f libsys_pic.a(ser_putc.pico)
+                0x00008100                ser_putc
+ *fill*         0x0000816f        0x1 
+ .text          0x00008170      0x603 libsys_pic.a(profile.pico)
+                0x00008170                procentry
+                0x00008640                procexit
+ *fill*         0x00008773        0xd 
+ .text          0x00008780      0x1bd libsys_pic.a(getidle.pico)
+                0x00008780                getidle
+ *fill*         0x0000893d        0x3 
+ .text          0x00008940       0x97 libsys_pic.a(get_randomness.pico)
+                0x00008940                get_randomness
+ *fill*         0x000089d7        0x9 
+ .text          0x000089e0       0x9d libsys_pic.a(pci_init.pico)
+                0x000089e0                pci_init
+ *fill*         0x00008a7d        0x3 
+ .text          0x00008a80       0x58 libsys_pic.a(sys_umap.pico)
+                0x00008a80                sys_umap
+ *fill*         0x00008ad8        0x8 
+ .text          0x00008ae0       0x56 libsys_pic.a(sys_schedctl.pico)
+                0x00008ae0                sys_schedctl
+ *fill*         0x00008b36        0xa 
+ .text          0x00008b40       0x72 libsys_pic.a(sys_diagctl.pico)
+                0x00008b40                sys_diagctl
+ *fill*         0x00008bb2        0xe 
+ .text          0x00008bc0       0x4c libsys_pic.a(getticks.pico)
+                0x00008bc0                getticks
+ *fill*         0x00008c0c        0x4 
+ .text          0x00008c10      0xc0b libsys_pic.a(ds.pico)
+                0x00008c10                ds_publish_label
+                0x00008cd0                ds_publish_u32
+                0x00008d90                ds_publish_str
+                0x00008ea0                ds_publish_mem
+                0x00008fa0                ds_retrieve_label_name
+                0x00009050                ds_retrieve_label_endpt
+                0x00009110                ds_retrieve_u32
+                0x000091d0                ds_retrieve_str
+                0x000092e0                ds_retrieve_mem
+                0x000093f0                ds_delete_u32
+                0x000094a0                ds_delete_str
+                0x00009550                ds_delete_mem
+                0x00009600                ds_delete_label
+                0x000096b0                ds_subscribe
+                0x00009760                ds_check
+ *fill*         0x0000981b        0x5 
+ .text          0x00009820      0x3d1 libsys_pic.a(tsc_util.pico)
+                0x00009820                tsc_calibrate
+                0x000098b0                micro_delay
+                0x00009a20                tsc_64_to_micros
+                0x00009b00                tsc_to_micros
+                0x00009b30                tsc_get_khz
+                0x00009be0                delta_frclock_64
+ *fill*         0x00009bf1        0xf 
+ .text          0x00009c00       0x4b libsys_pic.a(sys_out.pico)
+                0x00009c00                sys_out
+ *fill*         0x00009c4b        0x5 
+ .text          0x00009c50       0x4d libsys_pic.a(sys_in.pico)
+                0x00009c50                sys_in
+ *fill*         0x00009c9d        0x3 
+ .text          0x00009ca0       0x38 libsys_pic.a(profile_extern.pico)
+                0x00009ca0                profile_get_tbl_size
+                0x00009cb0                profile_get_announce
+                0x00009cc0                profile_register
+ *fill*         0x00009cd8        0x8 
+ .text          0x00009ce0       0xa9 libsys_pic.a(tickdelay.pico)
+                0x00009ce0                tickdelay
+ *fill*         0x00009d89        0x7 
+ .text          0x00009d90       0x41 libsys_pic.a(sys_profbuf.pico)
+                0x00009d90                sys_profbuf
+ *fill*         0x00009dd1        0xf 
+ .text          0x00009de0      0x13d libsys_pic.a(sys_hz.pico)
+                0x00009de0                sys_hz
+                0x00009e70                micros_to_ticks
+ *fill*         0x00009f1d        0x3 
+ .text          0x00009f20      0x835 libsys_pic.a(safecopies.pico)
+                0x00009f20                cpf_grant_direct
+                0x0000a2c0                cpf_setgrant_direct
+                0x0000a330                cpf_revoke
+                0x0000a380                cpf_grant_indirect
+                0x0000a440                cpf_setgrant_indirect
+                0x0000a4a0                cpf_grant_magic
+                0x0000a580                cpf_setgrant_magic
+                0x0000a5f0                cpf_lookup
+                0x0000a680                cpf_getgrants
+                0x0000a6d0                cpf_setgrant_disable
+                0x0000a720                cpf_reload
+ *fill*         0x0000a755        0xb 
+ .text          0x0000a760       0x41 libsys_pic.a(sys_setgrant.pico)
+                0x0000a760                sys_setgrant
+ *fill*         0x0000a7a1        0xf 
+ .text          0x0000a7b0      0x2fd libsys_pic.a(sef_signal.pico)
+                0x0000a7b0                do_sef_signal_request
+                0x0000a960                sef_setcb_signal_handler
+                0x0000a9c0                sef_setcb_signal_manager
+                0x0000aa20                sef_cb_signal_handler_null
+                0x0000aa30                sef_cb_signal_manager_null
+                0x0000aa40                sef_cb_signal_handler_term
+                0x0000aa70                sef_cb_signal_handler_posix_default
+ *fill*         0x0000aaad        0x3 
+ .text          0x0000aab0       0x5c libsys_pic.a(sys_getsig.pico)
+                0x0000aab0                sys_getksig
+ *fill*         0x0000ab0c        0x4 
+ .text          0x0000ab10       0x3a libsys_pic.a(sys_endsig.pico)
+                0x0000ab10                sys_endksig
+ *fill*         0x0000ab4a        0x6 
+ .text          0x0000ab50      0x5e8 libsys_pic.a(sef_liveupdate.pico)
+                0x0000ab50                do_sef_lu_before_receive
+                0x0000ad00                do_sef_lu_request
+                0x0000ad90                sef_cb_lu_state_isvalid_null
+                0x0000ada0                sef_setcb_lu_prepare
+                0x0000ae00                sef_setcb_lu_state_isvalid
+                0x0000ae60                sef_setcb_lu_state_changed
+                0x0000aec0                sef_setcb_lu_state_dump
+                0x0000af20                sef_setcb_lu_state_save
+                0x0000af80                sef_setcb_lu_response
+                0x0000afe0                sef_cb_lu_prepare_null
+                0x0000aff0                sef_cb_lu_state_changed_null
+                0x0000b000                sef_cb_lu_state_dump_null
+                0x0000b030                sef_cb_lu_state_save_null
+                0x0000b040                sef_cb_lu_response_null
+                0x0000b050                sef_cb_lu_prepare_always_ready
+                0x0000b060                sef_cb_lu_prepare_never_ready
+                0x0000b0a0                sef_cb_lu_prepare_crash
+                0x0000b0c0                sef_cb_lu_state_isvalid_standard
+                0x0000b0e0                sef_cb_lu_state_isvalid_workfree
+                0x0000b0f0                sef_cb_lu_response_rs_reply
+ *fill*         0x0000b138        0x8 
+ .text          0x0000b140      0x3f0 libsys_pic.a(sef_init.pico)
+                0x0000b140                do_sef_rs_init
+                0x0000b240                do_sef_init_request
+                0x0000b320                sef_setcb_init_fresh
+                0x0000b380                sef_setcb_init_lu
+                0x0000b3e0                sef_setcb_init_restart
+                0x0000b440                sef_setcb_init_response
+                0x0000b4a0                sef_cb_init_null
+                0x0000b4b0                sef_cb_init_response_null
+                0x0000b4c0                sef_cb_init_fail
+                0x0000b4d0                sef_cb_init_reset
+                0x0000b4e0                sef_cb_init_crash
+                0x0000b500                sef_cb_init_response_rs_reply
+ .text          0x0000b530      0x550 libsys_pic.a(sef.pico)
+                0x0000b530                sef_startup
+                0x0000b6c0                sef_receive_status
+                0x0000b800                sef_self
+                0x0000b840                sef_cancel
+                0x0000b860                __exit
+                0x0000b860                sef_exit
+                0x0000b860                _exit
+                0x0000b8b0                sef_debug_header
+ .text          0x0000ba80       0x63 libsys_pic.a(vm_update.pico)
+                0x0000ba80                vm_update
+ *fill*         0x0000bae3        0xd 
+ .text          0x0000baf0       0x3e libsys_pic.a(taskcall.pico)
+                0x0000baf0                _taskcall
+ *fill*         0x0000bb2e        0x2 
+ .text          0x0000bb30       0x77 libsys_pic.a(sys_times.pico)
+                0x0000bb30                sys_times
+ *fill*         0x0000bba7        0x9 
+ .text          0x0000bbb0       0x33 libsys_pic.a(sys_exit.pico)
+                0x0000bbb0                sys_exit
+ *fill*         0x0000bbe3        0xd 
+ .text          0x0000bbf0       0xbb libsys_pic.a(sef_ping.pico)
+                0x0000bbf0                do_sef_ping_request
+                0x0000bc20                sef_setcb_ping_reply
+                0x0000bc80                sef_cb_ping_reply_null
+                0x0000bc90                sef_cb_ping_reply_pong
+ *fill*         0x0000bcab        0x5 
+ .text          0x0000bcb0       0x2b libsys_pic.a(sef_fi.pico)
+                0x0000bcb0                do_sef_fi_request
+ *fill*         0x0000bcdb        0x5 
+ .text          0x0000bce0       0xa4 libsys_pic.a(assert.pico)
+                0x0000bce0                __assert13
+                0x0000bd50                __assert
+ *fill*         0x0000bd84        0xc 
+ .text          0x0000bd90       0xd4 libsys_pic.a(panic.pico)
+                0x0000bd90                panic_hook
+                0x0000bd90                __panic_hook
+                0x0000bda0                panic
+ *fill*         0x0000be64        0xc 
+ .text          0x0000be70       0xec libsys_pic.a(sys_getinfo.pico)
+                0x0000be70                sys_getinfo
+                0x0000bed0                sys_whoami
+ *fill*         0x0000bf5c        0x4 
+ .text          0x0000bf60       0x70 libsys_pic.a(stacktrace.pico)
+                0x0000bf60                util_stacktrace
+ .text          0x0000bfd0       0x2e libsys_pic.a(kprintf.pico)
+                0x0000bfd0                printf
+ *fill*         0x0000bffe        0x2 
+ .text          0x0000c000       0x31 libsys_pic.a(kernel_call.pico)
+                0x0000c000                _kernel_call
+ *fill*         0x0000c031        0x3 
+ .text          0x0000c034        0x0 /usr/lib/crtendS.o
+ .text          0x0000c034        0x0 /usr/lib/crtn.o
+ *(.gnu.warning)
+
+.fini           0x0000c040        0xa
+ *(SORT(.fini))
+ .fini          0x0000c040        0x3 /usr/lib/crti.o
+                0x0000c040                _fini
+ .fini          0x0000c043        0x5 /usr/lib/crtbeginS.o
+ .fini          0x0000c048        0x2 /usr/lib/crtn.o
+                0x0000c04a                PROVIDE (__etext, .)
+                0x0000c04a                PROVIDE (_etext, .)
+                0x0000c04a                PROVIDE (etext, .)
+
+.rodata         0x0000c04c     0x117f
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.1
+                0x0000c04c       0x7a libsys_pic.a(pci_slot_name.pico)
+ .rodata.str1.1
+                0x0000c0c6       0x8b libsys_pic.a(pci_set_acl.pico)
+ .rodata.str1.1
+                0x0000c151       0x4b libsys_pic.a(pci_reserve.pico)
+ .rodata.str1.1
+                0x0000c19c       0x51 libsys_pic.a(pci_rescan_bus.pico)
+ .rodata.str1.1
+                0x0000c1ed       0x4d libsys_pic.a(pci_next_dev.pico)
+ .rodata.str1.1
+                0x0000c23a       0x57 libsys_pic.a(pci_ids.pico)
+ .rodata.str1.1
+                0x0000c291       0x23 libsys_pic.a(pci_get_bar.pico)
+ .rodata.str1.1
+                0x0000c2b4       0x4f libsys_pic.a(pci_first_dev.pico)
+ .rodata.str1.1
+                0x0000c303       0x92 libsys_pic.a(pci_find_dev.pico)
+ .rodata.str1.1
+                0x0000c395       0x4d libsys_pic.a(pci_dev_name.pico)
+                                 0x78 (size before relaxing)
+ .rodata.str1.1
+                0x0000c3e2       0x5d libsys_pic.a(pci_del_acl.pico)
+                                 0x61 (size before relaxing)
+ .rodata.str1.1
+                0x0000c43f       0x4b libsys_pic.a(pci_attr_w8.pico)
+ .rodata.str1.1
+                0x0000c48a       0x4d libsys_pic.a(pci_attr_w32.pico)
+ .rodata.str1.1
+                0x0000c4d7       0x4d libsys_pic.a(pci_attr_w16.pico)
+ .rodata.str1.1
+                0x0000c524       0x4b libsys_pic.a(pci_attr_r8.pico)
+ .rodata.str1.1
+                0x0000c56f       0x4d libsys_pic.a(pci_attr_r32.pico)
+ .rodata.str1.1
+                0x0000c5bc       0x4d libsys_pic.a(pci_attr_r16.pico)
+ .rodata.str1.1
+                0x0000c609       0xda libsys_pic.a(vm_cache.pico)
+ .rodata.str1.1
+                0x0000c6e3       0x80 libsys_pic.a(timers.pico)
+ .rodata.str1.1
+                0x0000c763       0x54 libsys_pic.a(sched_stop.pico)
+ .rodata.str1.1
+                0x0000c7b7       0x85 libsys_pic.a(sched_start.pico)
+                                 0xc1 (size before relaxing)
+ .rodata        0x0000c83c       0x1c libsys_pic.a(getsysinfo.pico)
+ .rodata.str1.1
+                0x0000c858       0x3a libsys_pic.a(env_prefix.pico)
+ .rodata.str1.1
+                0x0000c892       0x38 libsys_pic.a(env_parse.pico)
+                                 0x40 (size before relaxing)
+ .rodata.str1.1
+                0x0000c8ca       0x58 libsys_pic.a(env_panic.pico)
+ .rodata.str1.1
+                0x0000c922       0x1b libsys_pic.a(env_get_prm.pico)
+ .rodata.str1.1
+                0x0000c93d       0x89 libsys_pic.a(asynsend.pico)
+ .rodata.str1.1
+                0x0000c9c6       0x18 libsys_pic.a(alloc_util.pico)
+ .rodata.str1.1
+                0x0000c9de       0xb2 libsys_pic.a(vbox.pico)
+ .rodata.str1.1
+                0x0000ca90       0x42 libsys_pic.a(timing.pico)
+ *fill*         0x0000cad2        0x2 
+ .rodata        0x0000cad4       0x10 libsys_pic.a(spin.pico)
+ .rodata.str1.1
+                0x0000cae4       0x1d libsys_pic.a(spin.pico)
+ .rodata.str1.1
+                0x0000cb01       0x61 libsys_pic.a(profile.pico)
+ *fill*         0x0000cb62        0x2 
+ .rodata.cst4   0x0000cb64        0x8 libsys_pic.a(getidle.pico)
+ .rodata.str1.1
+                0x0000cb6c       0x74 libsys_pic.a(pci_init.pico)
+                                 0x78 (size before relaxing)
+ .rodata.str1.1
+                0x0000cbe0       0x20 libsys_pic.a(sys_diagctl.pico)
+ .rodata.str1.1
+                0x0000cc00       0x5d libsys_pic.a(tsc_util.pico)
+ .rodata.str1.1
+                0x0000cc5d       0x39 libsys_pic.a(sys_hz.pico)
+ .rodata.str1.1
+                0x0000cc96       0xb8 libsys_pic.a(safecopies.pico)
+ .rodata.str1.1
+                0x0000cd4e       0x82 libsys_pic.a(sef_signal.pico)
+ .rodata.str1.1
+                0x0000cdd0      0x1b7 libsys_pic.a(sef_liveupdate.pico)
+                                0x1c3 (size before relaxing)
+ .rodata.str1.1
+                0x0000cf87       0x8e libsys_pic.a(sef_init.pico)
+                                 0x99 (size before relaxing)
+ .rodata.str1.1
+                0x0000d015      0x101 libsys_pic.a(sef.pico)
+ .rodata.str1.1
+                0x0000d116       0x20 libsys_pic.a(sef_ping.pico)
+                                 0x2b (size before relaxing)
+ .rodata.str1.1
+                0x0000d136       0x38 libsys_pic.a(assert.pico)
+                                 0x3a (size before relaxing)
+ .rodata.str1.1
+                0x0000d16e       0x56 libsys_pic.a(panic.pico)
+                                 0x58 (size before relaxing)
+ .rodata.str1.1
+                0x0000d1c4        0x7 libsys_pic.a(stacktrace.pico)
+                                  0x9 (size before relaxing)
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000d1cc      0x7f4
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000d1cc      0x7f4 libsys_pic.a(pci_slot_name.pico)
+
+.eh_frame       0x0000d9c0     0x1db0
+ *(.eh_frame)
+ .eh_frame      0x0000d9c0       0x3c /usr/lib/crti.o
+                                 0x40 (size before relaxing)
+ .eh_frame      0x0000d9fc        0x0 /usr/lib/crtbeginS.o
+ .eh_frame      0x0000d9fc       0x20 libsys_pic.a(pci_slot_name.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000da1c       0x20 libsys_pic.a(pci_set_acl.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000da3c       0x38 libsys_pic.a(pci_reserve.pico)
+                                 0x50 (size before relaxing)
+ .eh_frame      0x0000da74       0x1c libsys_pic.a(pci_rescan_bus.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000da90       0x20 libsys_pic.a(pci_next_dev.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000dab0       0x1c libsys_pic.a(pci_ids.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000dacc       0x20 libsys_pic.a(pci_get_bar.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000daec       0x20 libsys_pic.a(pci_first_dev.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000db0c       0x20 libsys_pic.a(pci_find_dev.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000db2c       0x20 libsys_pic.a(pci_dev_name.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000db4c       0x20 libsys_pic.a(pci_del_acl.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000db6c       0x1c libsys_pic.a(pci_attr_w8.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000db88       0x1c libsys_pic.a(pci_attr_w32.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000dba4       0x1c libsys_pic.a(pci_attr_w16.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000dbc0       0x1c libsys_pic.a(pci_attr_r8.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000dbdc       0x1c libsys_pic.a(pci_attr_r32.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000dbf8       0x1c libsys_pic.a(pci_attr_r16.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000dc14       0x20 libsys_pic.a(vm_set_priv.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000dc34       0x40 libsys_pic.a(vm_query_exit.pico)
+                                 0x58 (size before relaxing)
+ .eh_frame      0x0000dc74       0x40 libsys_pic.a(vm_procctl.pico)
+                                 0x58 (size before relaxing)
+ .eh_frame      0x0000dcb4       0x20 libsys_pic.a(vm_notify_sig.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000dcd4       0x20 libsys_pic.a(vm_memctl.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000dcf4       0x40 libsys_pic.a(vm_map_phys.pico)
+                                 0x58 (size before relaxing)
+ .eh_frame      0x0000dd34       0x60 libsys_pic.a(vm_info.pico)
+                                 0x78 (size before relaxing)
+ .eh_frame      0x0000dd94       0x20 libsys_pic.a(vm_fork.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000ddb4       0x40 libsys_pic.a(vm_exit.pico)
+                                 0x58 (size before relaxing)
+ .eh_frame      0x0000ddf4       0x80 libsys_pic.a(vm_cache.pico)
+                                 0x98 (size before relaxing)
+ .eh_frame      0x0000de74       0x74 libsys_pic.a(timers.pico)
+                                 0x8c (size before relaxing)
+ .eh_frame      0x0000dee8       0x20 libsys_pic.a(sys_vumap.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000df08       0x20 libsys_pic.a(sys_vtimer.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000df28       0x1c libsys_pic.a(sys_vsafecopy.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000df44       0xac libsys_pic.a(sys_vmctl.pico)
+                                 0xc4 (size before relaxing)
+ .eh_frame      0x0000dff0       0x20 libsys_pic.a(sys_vircopy.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e010       0x1c libsys_pic.a(sys_update.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e02c       0x20 libsys_pic.a(sys_trace.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e04c       0x1c libsys_pic.a(sys_stime.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e068       0x1c libsys_pic.a(sys_statectl.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e084       0x1c libsys_pic.a(sys_sigsend.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e0a0       0x1c libsys_pic.a(sys_sigreturn.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e0bc       0x1c libsys_pic.a(sys_settime.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e0d8       0x1c libsys_pic.a(sys_setalarm.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e0f4       0x1c libsys_pic.a(sys_schedule.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e110       0x1c libsys_pic.a(sys_safememset.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e12c       0x3c libsys_pic.a(sys_safecopy.pico)
+                                 0x54 (size before relaxing)
+ .eh_frame      0x0000e168       0x1c libsys_pic.a(sys_runctl.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e184       0x38 libsys_pic.a(sys_privctl.pico)
+                                 0x50 (size before relaxing)
+ .eh_frame      0x0000e1bc       0x20 libsys_pic.a(sys_physcopy.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e1dc       0x1c libsys_pic.a(sys_padconf.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e1f8       0x20 libsys_pic.a(sys_memset.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e218       0x38 libsys_pic.a(sys_mcontext.pico)
+                                 0x50 (size before relaxing)
+ .eh_frame      0x0000e250       0x1c libsys_pic.a(sys_kill.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e26c       0x20 libsys_pic.a(sys_irqctl.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e28c       0x1c libsys_pic.a(sys_fork.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e2a8       0x1c libsys_pic.a(sys_exec.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e2c4       0x1c libsys_pic.a(sys_cprof.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e2e0       0x1c libsys_pic.a(sys_clear.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e2fc       0x1c libsys_pic.a(sys_abort.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e318       0x20 libsys_pic.a(srv_kill.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e338       0x20 libsys_pic.a(srv_fork.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e358       0x1c libsys_pic.a(sqrt_approx.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e374       0x20 libsys_pic.a(sched_stop.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e394       0x40 libsys_pic.a(sched_start.pico)
+                                 0x58 (size before relaxing)
+ .eh_frame      0x0000e3d4       0x20 libsys_pic.a(optset.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e3f4       0x20 libsys_pic.a(mapdriver.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e414       0x20 libsys_pic.a(kputs.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e434       0x20 libsys_pic.a(kputc.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e454       0x1c libsys_pic.a(getuptime.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e470       0x20 libsys_pic.a(getsysinfo.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e490       0x20 libsys_pic.a(getprocnr.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e4b0       0x80 libsys_pic.a(getepinfo.pico)
+                                 0x98 (size before relaxing)
+ .eh_frame      0x0000e530       0x20 libsys_pic.a(fkey_ctl.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e550       0x20 libsys_pic.a(env_prefix.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e570       0x20 libsys_pic.a(env_parse.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e590       0x20 libsys_pic.a(env_panic.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e5b0       0x3c libsys_pic.a(env_get_prm.pico)
+                                 0x54 (size before relaxing)
+ .eh_frame      0x0000e5ec       0x20 libsys_pic.a(copyfd.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e60c       0x20 libsys_pic.a(checkperms.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e62c       0x40 libsys_pic.a(asynsend.pico)
+                                 0x58 (size before relaxing)
+ .eh_frame      0x0000e66c       0x3c libsys_pic.a(alloc_util.pico)
+                                 0x54 (size before relaxing)
+ .eh_frame      0x0000e6a8      0x14c libsys_pic.a(vbox.pico)
+                                0x164 (size before relaxing)
+ .eh_frame      0x0000e7f4       0x40 libsys_pic.a(timing.pico)
+                                 0x58 (size before relaxing)
+ .eh_frame      0x0000e834       0x1c libsys_pic.a(sys_voutw.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e850       0x1c libsys_pic.a(sys_voutl.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e86c       0x1c libsys_pic.a(sys_voutb.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e888       0x1c libsys_pic.a(sys_vinw.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e8a4       0x1c libsys_pic.a(sys_vinl.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e8c0       0x1c libsys_pic.a(sys_vinb.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e8dc       0x1c libsys_pic.a(sys_umap_remote.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e8f8       0x1c libsys_pic.a(sys_sdevio.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e914       0x1c libsys_pic.a(sys_readbios.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e930       0x1c libsys_pic.a(sys_int86.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e94c       0x1c libsys_pic.a(sys_eniop.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000e968       0x3c libsys_pic.a(spin.pico)
+                                 0x54 (size before relaxing)
+ .eh_frame      0x0000e9a4       0x20 libsys_pic.a(ser_putc.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000e9c4       0x40 libsys_pic.a(profile.pico)
+                                 0x58 (size before relaxing)
+ .eh_frame      0x0000ea04       0x20 libsys_pic.a(getidle.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000ea24       0x20 libsys_pic.a(get_randomness.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000ea44       0x20 libsys_pic.a(pci_init.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000ea64       0x1c libsys_pic.a(sys_umap.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000ea80       0x1c libsys_pic.a(sys_schedctl.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000ea9c       0x1c libsys_pic.a(sys_diagctl.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000eab8       0x1c libsys_pic.a(getticks.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000ead4      0x1e0 libsys_pic.a(ds.pico)
+                                0x1f8 (size before relaxing)
+ .eh_frame      0x0000ecb4       0xb0 libsys_pic.a(tsc_util.pico)
+                                 0xc8 (size before relaxing)
+ .eh_frame      0x0000ed64       0x1c libsys_pic.a(sys_out.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000ed80       0x1c libsys_pic.a(sys_in.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000ed9c       0x54 libsys_pic.a(profile_extern.pico)
+                                 0x6c (size before relaxing)
+ .eh_frame      0x0000edf0       0x20 libsys_pic.a(tickdelay.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000ee10       0x1c libsys_pic.a(sys_profbuf.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000ee2c       0x38 libsys_pic.a(sys_hz.pico)
+                                 0x50 (size before relaxing)
+ .eh_frame      0x0000ee64      0x170 libsys_pic.a(safecopies.pico)
+                                0x188 (size before relaxing)
+ .eh_frame      0x0000efd4       0x1c libsys_pic.a(sys_setgrant.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000eff0       0xc8 libsys_pic.a(sef_signal.pico)
+                                 0xe0 (size before relaxing)
+ .eh_frame      0x0000f0b8       0x20 libsys_pic.a(sys_getsig.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000f0d8       0x1c libsys_pic.a(sys_endsig.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000f0f4      0x258 libsys_pic.a(sef_liveupdate.pico)
+                                0x270 (size before relaxing)
+ .eh_frame      0x0000f34c      0x158 libsys_pic.a(sef_init.pico)
+                                0x170 (size before relaxing)
+ .eh_frame      0x0000f4a4       0xb4 libsys_pic.a(sef.pico)
+                                 0xcc (size before relaxing)
+ .eh_frame      0x0000f558       0x20 libsys_pic.a(vm_update.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000f578       0x20 libsys_pic.a(taskcall.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000f598       0x20 libsys_pic.a(sys_times.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000f5b8       0x1c libsys_pic.a(sys_exit.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000f5d4       0x70 libsys_pic.a(sef_ping.pico)
+                                 0x88 (size before relaxing)
+ .eh_frame      0x0000f644       0x1c libsys_pic.a(sef_fi.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000f660       0x38 libsys_pic.a(assert.pico)
+                                 0x50 (size before relaxing)
+ .eh_frame      0x0000f698       0x3c libsys_pic.a(panic.pico)
+                                 0x54 (size before relaxing)
+ .eh_frame      0x0000f6d4       0x3c libsys_pic.a(sys_getinfo.pico)
+                                 0x54 (size before relaxing)
+ .eh_frame      0x0000f710       0x20 libsys_pic.a(stacktrace.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000f730       0x1c libsys_pic.a(kprintf.pico)
+                                 0x34 (size before relaxing)
+ .eh_frame      0x0000f74c       0x20 libsys_pic.a(kernel_call.pico)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000f76c        0x4 /usr/lib/crtendS.o
+
+.note.minix.ident
+                0x0000f770       0x18
+ .note.minix.ident
+                0x0000f770       0x18 /usr/lib/crti.o
+
+.note.netbsd.pax
+                0x0000f788       0x14
+ .note.netbsd.pax
+                0x0000f788       0x14 /usr/lib/crti.o
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x0000f79c                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x0001079c                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT(.init_array.*))
+ *(.init_array)
+
+.fini_array
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+
+.ctors          0x0001079c        0x8
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ .ctors         0x0001079c        0x4 /usr/lib/crtbeginS.o
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ .ctors         0x000107a0        0x4 /usr/lib/crtendS.o
+                0x000107a0                __CTOR_LIST_END__
+
+.dtors          0x000107a4        0x8
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ .dtors         0x000107a4        0x4 /usr/lib/crtbeginS.o
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ .dtors         0x000107a8        0x4 /usr/lib/crtendS.o
+
+.jcr            0x000107ac        0x4
+ *(.jcr)
+ .jcr           0x000107ac        0x0 /usr/lib/crtbeginS.o
+ .jcr           0x000107ac        0x4 /usr/lib/crtendS.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x000107b0       0xa8
+ *(.dynamic)
+ .dynamic       0x000107b0       0xa8 /usr/lib/crti.o
+                0x000107b0                _DYNAMIC
+
+.got            0x00010858       0x48
+ *(.got)
+ .got           0x00010858       0x48 /usr/lib/crti.o
+ *(.igot)
+                0x000108a0                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0xc)?0xc:0x0)
+
+.got.plt        0x000108a0      0x140
+ *(.got.plt)
+ .got.plt       0x000108a0      0x140 /usr/lib/crti.o
+                0x000108a0                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+
+.data           0x000109e0       0xe8
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x000109e0        0x0 /usr/lib/crti.o
+ .data          0x000109e0        0x0 /usr/lib/crtbeginS.o
+ .data.rel      0x000109e0       0x26 /usr/lib/crtbeginS.o
+                0x000109e0                __dso_handle
+ *fill*         0x00010a06        0x2 
+ .data          0x00010a08        0x0 libsys_pic.a(pci_slot_name.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(pci_set_acl.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(pci_reserve.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(pci_rescan_bus.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(pci_next_dev.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(pci_ids.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(pci_get_bar.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(pci_first_dev.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(pci_find_dev.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(pci_dev_name.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(pci_del_acl.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(pci_attr_w8.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(pci_attr_w32.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(pci_attr_w16.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(pci_attr_r8.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(pci_attr_r32.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(pci_attr_r16.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(vm_set_priv.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(vm_query_exit.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(vm_procctl.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(vm_notify_sig.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(vm_memctl.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(vm_map_phys.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(vm_info.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(vm_fork.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(vm_exit.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(vm_cache.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(timers.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_vumap.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_vtimer.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_vsafecopy.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_vmctl.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_vircopy.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_update.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_trace.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_stime.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_statectl.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_sprof.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_sigsend.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_sigreturn.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_settime.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_setalarm.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_schedule.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_safememset.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_safecopy.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_runctl.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_privctl.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_physcopy.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_padconf.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_memset.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_mcontext.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_kill.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_irqctl.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_fork.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_exec.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_cprof.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_clear.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sys_abort.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(srv_kill.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(srv_fork.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sqrt_approx.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sched_stop.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(sched_start.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(optset.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(mapdriver.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(kputs.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(kputc.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(getuptime.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(getsysinfo.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(getprocnr.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(getepinfo.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(fkey_ctl.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(env_prefix.pico)
+ .data          0x00010a08        0x0 libsys_pic.a(env_parse.pico)
+ .data          0x00010a08       0x80 libsys_pic.a(env_panic.pico)
+ .data          0x00010a88        0x0 libsys_pic.a(env_get_prm.pico)
+ .data          0x00010a88        0x0 libsys_pic.a(copyfd.pico)
+ .data          0x00010a88        0x0 libsys_pic.a(checkperms.pico)
+ .data          0x00010a88        0x0 libsys_pic.a(asynsend.pico)
+ .data          0x00010a88        0x0 libsys_pic.a(alloc_util.pico)
+ .data          0x00010a88        0x4 libsys_pic.a(vbox.pico)
+ .data          0x00010a8c        0x0 libsys_pic.a(timing.pico)
+ .data          0x00010a8c        0x0 libsys_pic.a(sys_voutw.pico)
+ .data          0x00010a8c        0x0 libsys_pic.a(sys_voutl.pico)
+ .data          0x00010a8c        0x0 libsys_pic.a(sys_voutb.pico)
+ .data          0x00010a8c        0x0 libsys_pic.a(sys_vinw.pico)
+ .data          0x00010a8c        0x0 libsys_pic.a(sys_vinl.pico)
+ .data          0x00010a8c        0x0 libsys_pic.a(sys_vinb.pico)
+ .data          0x00010a8c        0x0 libsys_pic.a(sys_umap_remote.pico)
+ .data          0x00010a8c        0x0 libsys_pic.a(sys_sdevio.pico)
+ .data          0x00010a8c        0x0 libsys_pic.a(sys_readbios.pico)
+ .data          0x00010a8c        0x0 libsys_pic.a(sys_int86.pico)
+ .data          0x00010a8c        0x0 libsys_pic.a(sys_eniop.pico)
+ .data          0x00010a8c        0x0 libsys_pic.a(spin.pico)
+ .data          0x00010a8c        0x0 libsys_pic.a(ser_putc.pico)
+ .data          0x00010a8c        0x0 libsys_pic.a(profile.pico)
+ .data          0x00010a8c        0x0 libsys_pic.a(getidle.pico)
+ .data          0x00010a8c        0x0 libsys_pic.a(get_randomness.pico)
+ .data          0x00010a8c        0x4 libsys_pic.a(pci_init.pico)
+                0x00010a8c                pci_procnr
+ .data          0x00010a90        0x0 libsys_pic.a(sys_umap.pico)
+ .data          0x00010a90        0x0 libsys_pic.a(sys_schedctl.pico)
+ .data          0x00010a90        0x0 libsys_pic.a(sys_diagctl.pico)
+ .data          0x00010a90        0x0 libsys_pic.a(getticks.pico)
+ .data          0x00010a90        0x0 libsys_pic.a(ds.pico)
+ .data          0x00010a90        0x0 libsys_pic.a(tsc_util.pico)
+ .data          0x00010a90        0x0 libsys_pic.a(sys_out.pico)
+ .data          0x00010a90        0x0 libsys_pic.a(sys_in.pico)
+ .data          0x00010a90        0x0 libsys_pic.a(profile_extern.pico)
+ .data          0x00010a90        0x0 libsys_pic.a(tickdelay.pico)
+ .data          0x00010a90        0x0 libsys_pic.a(sys_profbuf.pico)
+ .data          0x00010a90        0x0 libsys_pic.a(sys_hz.pico)
+ .data          0x00010a90        0x0 libsys_pic.a(safecopies.pico)
+ .data          0x00010a90        0x0 libsys_pic.a(sys_setgrant.pico)
+ .data          0x00010a90        0x0 libsys_pic.a(sef_signal.pico)
+ .data.rel      0x00010a90        0x8 libsys_pic.a(sef_signal.pico)
+ .data          0x00010a98        0x0 libsys_pic.a(sys_getsig.pico)
+ .data          0x00010a98        0x0 libsys_pic.a(sys_endsig.pico)
+ .data          0x00010a98        0x0 libsys_pic.a(sef_liveupdate.pico)
+ .data.rel      0x00010a98       0x18 libsys_pic.a(sef_liveupdate.pico)
+ .data          0x00010ab0        0x0 libsys_pic.a(sef_init.pico)
+ .data.rel      0x00010ab0       0x10 libsys_pic.a(sef_init.pico)
+ .data          0x00010ac0        0x4 libsys_pic.a(sef.pico)
+                0x00010ac0                sef_self_endpoint
+ .data          0x00010ac4        0x0 libsys_pic.a(vm_update.pico)
+ .data          0x00010ac4        0x0 libsys_pic.a(taskcall.pico)
+ .data          0x00010ac4        0x0 libsys_pic.a(sys_times.pico)
+ .data          0x00010ac4        0x0 libsys_pic.a(sys_exit.pico)
+ .data          0x00010ac4        0x0 libsys_pic.a(sef_ping.pico)
+ .data.rel      0x00010ac4        0x4 libsys_pic.a(sef_ping.pico)
+ .data          0x00010ac8        0x0 libsys_pic.a(sef_fi.pico)
+ .data          0x00010ac8        0x0 libsys_pic.a(assert.pico)
+ .data          0x00010ac8        0x0 libsys_pic.a(panic.pico)
+ .data          0x00010ac8        0x0 libsys_pic.a(sys_getinfo.pico)
+ .data          0x00010ac8        0x0 libsys_pic.a(stacktrace.pico)
+ .data          0x00010ac8        0x0 libsys_pic.a(kprintf.pico)
+ .data          0x00010ac8        0x0 libsys_pic.a(kernel_call.pico)
+ .data          0x00010ac8        0x0 /usr/lib/crtendS.o
+ .data          0x00010ac8        0x0 /usr/lib/crtn.o
+
+.data1
+ *(.data1)
+                0x00010ac8                _edata = .
+                0x00010ac8                PROVIDE (edata, .)
+                0x00010ac8                . = .
+                0x00010ac8                __bss_start = .
+
+.bss            0x00010ad0    0xdc52c
+ *(.dynbss)
+ .dynbss        0x00000000        0x0 /usr/lib/crti.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00010ad0        0x0 /usr/lib/crti.o
+ .bss           0x00010ad0        0x0 /usr/lib/crtbeginS.o
+ .bss           0x00010ad0       0x50 libsys_pic.a(pci_slot_name.pico)
+ .bss           0x00010b20        0x0 libsys_pic.a(pci_set_acl.pico)
+ .bss           0x00010b20        0x0 libsys_pic.a(pci_reserve.pico)
+ .bss           0x00010b20        0x0 libsys_pic.a(pci_rescan_bus.pico)
+ .bss           0x00010b20        0x0 libsys_pic.a(pci_next_dev.pico)
+ .bss           0x00010b20        0x0 libsys_pic.a(pci_ids.pico)
+ .bss           0x00010b20        0x0 libsys_pic.a(pci_get_bar.pico)
+ .bss           0x00010b20        0x0 libsys_pic.a(pci_first_dev.pico)
+ .bss           0x00010b20        0x0 libsys_pic.a(pci_find_dev.pico)
+ .bss           0x00010b20       0x50 libsys_pic.a(pci_dev_name.pico)
+ .bss           0x00010b70        0x0 libsys_pic.a(pci_del_acl.pico)
+ .bss           0x00010b70        0x0 libsys_pic.a(pci_attr_w8.pico)
+ .bss           0x00010b70        0x0 libsys_pic.a(pci_attr_w32.pico)
+ .bss           0x00010b70        0x0 libsys_pic.a(pci_attr_w16.pico)
+ .bss           0x00010b70        0x0 libsys_pic.a(pci_attr_r8.pico)
+ .bss           0x00010b70        0x0 libsys_pic.a(pci_attr_r32.pico)
+ .bss           0x00010b70        0x0 libsys_pic.a(pci_attr_r16.pico)
+ .bss           0x00010b70        0x0 libsys_pic.a(vm_set_priv.pico)
+ .bss           0x00010b70        0x0 libsys_pic.a(vm_query_exit.pico)
+ .bss           0x00010b70        0x0 libsys_pic.a(vm_procctl.pico)
+ .bss           0x00010b70        0x0 libsys_pic.a(vm_notify_sig.pico)
+ .bss           0x00010b70        0x0 libsys_pic.a(vm_memctl.pico)
+ .bss           0x00010b70        0x0 libsys_pic.a(vm_map_phys.pico)
+ .bss           0x00010b70        0x0 libsys_pic.a(vm_info.pico)
+ .bss           0x00010b70        0x0 libsys_pic.a(vm_fork.pico)
+ .bss           0x00010b70        0x0 libsys_pic.a(vm_exit.pico)
+ .bss           0x00010b70        0x0 libsys_pic.a(vm_cache.pico)
+ .bss           0x00010b70        0x5 libsys_pic.a(timers.pico)
+ *fill*         0x00010b75        0x3 
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_vumap.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_vtimer.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_vsafecopy.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_vmctl.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_vircopy.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_update.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_trace.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_stime.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_statectl.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_sprof.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_sigsend.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_sigreturn.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_settime.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_setalarm.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_schedule.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_safememset.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_safecopy.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_runctl.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_privctl.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_physcopy.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_padconf.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_memset.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_mcontext.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_kill.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_irqctl.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_fork.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_exec.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_cprof.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_clear.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sys_abort.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(srv_kill.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(srv_fork.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sqrt_approx.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sched_stop.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(sched_start.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(optset.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(mapdriver.pico)
+ .bss           0x00010b78        0x0 libsys_pic.a(kputs.pico)
+ .bss           0x00010b78      0x7d4 libsys_pic.a(kputc.pico)
+ .bss           0x0001134c        0x0 libsys_pic.a(getuptime.pico)
+ .bss           0x0001134c        0x0 libsys_pic.a(getsysinfo.pico)
+ .bss           0x0001134c        0x0 libsys_pic.a(getprocnr.pico)
+ .bss           0x0001134c        0x0 libsys_pic.a(getepinfo.pico)
+ .bss           0x0001134c        0x0 libsys_pic.a(fkey_ctl.pico)
+ .bss           0x0001134c        0x0 libsys_pic.a(env_prefix.pico)
+ .bss           0x0001134c        0x0 libsys_pic.a(env_parse.pico)
+ .bss           0x0001134c        0x0 libsys_pic.a(env_panic.pico)
+ .bss           0x0001134c      0x408 libsys_pic.a(env_get_prm.pico)
+                0x0001134c                env_argc
+                0x00011350                env_argv
+ .bss           0x00011754        0x0 libsys_pic.a(copyfd.pico)
+ .bss           0x00011754        0x0 libsys_pic.a(checkperms.pico)
+ *fill*         0x00011754        0xc 
+ .bss           0x00011760     0xa018 libsys_pic.a(asynsend.pico)
+ .bss           0x0001b778        0x0 libsys_pic.a(alloc_util.pico)
+ .bss           0x0001b778        0x0 libsys_pic.a(vbox.pico)
+ .bss           0x0001b778        0x0 libsys_pic.a(timing.pico)
+ .bss           0x0001b778        0x0 libsys_pic.a(sys_voutw.pico)
+ .bss           0x0001b778        0x0 libsys_pic.a(sys_voutl.pico)
+ .bss           0x0001b778        0x0 libsys_pic.a(sys_voutb.pico)
+ .bss           0x0001b778        0x0 libsys_pic.a(sys_vinw.pico)
+ .bss           0x0001b778        0x0 libsys_pic.a(sys_vinl.pico)
+ .bss           0x0001b778        0x0 libsys_pic.a(sys_vinb.pico)
+ .bss           0x0001b778        0x0 libsys_pic.a(sys_umap_remote.pico)
+ .bss           0x0001b778        0x0 libsys_pic.a(sys_sdevio.pico)
+ .bss           0x0001b778        0x0 libsys_pic.a(sys_readbios.pico)
+ .bss           0x0001b778        0x0 libsys_pic.a(sys_int86.pico)
+ .bss           0x0001b778        0x0 libsys_pic.a(sys_eniop.pico)
+ .bss           0x0001b778        0x0 libsys_pic.a(spin.pico)
+ .bss           0x0001b778        0x0 libsys_pic.a(ser_putc.pico)
+ .bss           0x0001b778     0xa428 libsys_pic.a(profile.pico)
+ .bss           0x00025ba0       0x18 libsys_pic.a(getidle.pico)
+ .bss           0x00025bb8        0x0 libsys_pic.a(get_randomness.pico)
+ .bss           0x00025bb8        0x0 libsys_pic.a(pci_init.pico)
+ .bss           0x00025bb8        0x0 libsys_pic.a(sys_umap.pico)
+ .bss           0x00025bb8        0x0 libsys_pic.a(sys_schedctl.pico)
+ .bss           0x00025bb8        0x0 libsys_pic.a(sys_diagctl.pico)
+ .bss           0x00025bb8        0x0 libsys_pic.a(getticks.pico)
+ .bss           0x00025bb8        0x0 libsys_pic.a(ds.pico)
+ .bss           0x00025bb8        0x9 libsys_pic.a(tsc_util.pico)
+ *fill*         0x00025bc1        0x3 
+ .bss           0x00025bc4        0x0 libsys_pic.a(sys_out.pico)
+ .bss           0x00025bc4        0x0 libsys_pic.a(sys_in.pico)
+ .bss           0x00025bc4        0x0 libsys_pic.a(profile_extern.pico)
+ .bss           0x00025bc4        0x0 libsys_pic.a(tickdelay.pico)
+ .bss           0x00025bc4        0x0 libsys_pic.a(sys_profbuf.pico)
+ .bss           0x00025bc4        0x4 libsys_pic.a(sys_hz.pico)
+ .bss           0x00025bc8       0x50 libsys_pic.a(safecopies.pico)
+ .bss           0x00025c18        0x0 libsys_pic.a(sys_setgrant.pico)
+ .bss           0x00025c18        0x0 libsys_pic.a(sef_signal.pico)
+ .bss           0x00025c18        0x0 libsys_pic.a(sys_getsig.pico)
+ .bss           0x00025c18        0x0 libsys_pic.a(sys_endsig.pico)
+ .bss           0x00025c18        0x8 libsys_pic.a(sef_liveupdate.pico)
+ .bss           0x00025c20        0x0 libsys_pic.a(sef_init.pico)
+ .bss           0x00025c20       0x3c libsys_pic.a(sef.pico)
+ .bss           0x00025c5c        0x0 libsys_pic.a(vm_update.pico)
+ .bss           0x00025c5c        0x0 libsys_pic.a(taskcall.pico)
+ .bss           0x00025c5c        0x0 libsys_pic.a(sys_times.pico)
+ .bss           0x00025c5c        0x0 libsys_pic.a(sys_exit.pico)
+ .bss           0x00025c5c        0x0 libsys_pic.a(sef_ping.pico)
+ .bss           0x00025c5c        0x0 libsys_pic.a(sef_fi.pico)
+ .bss           0x00025c5c        0x0 libsys_pic.a(assert.pico)
+ .bss           0x00025c5c        0x0 libsys_pic.a(panic.pico)
+ .bss           0x00025c5c        0x0 libsys_pic.a(sys_getinfo.pico)
+ .bss           0x00025c5c        0x0 libsys_pic.a(stacktrace.pico)
+ .bss           0x00025c5c        0x0 libsys_pic.a(kprintf.pico)
+ .bss           0x00025c5c        0x0 libsys_pic.a(kernel_call.pico)
+ .bss           0x00025c5c        0x0 /usr/lib/crtendS.o
+ .bss           0x00025c5c        0x0 /usr/lib/crtn.o
+ *(COMMON)
+ COMMON         0x00025c5c    0xc7380 libsys_pic.a(profile_extern.pico)
+                0x00025c5c                cprof_tbl
+ COMMON         0x000ecfdc       0x20 libsys_pic.a(sef.pico)
+                0x000ecfdc                sef_self_receiving
+                0x000ecfe0                sef_self_priv_flags
+                0x000ecfe4                sef_self_name
+                0x000ecff8                sef_self_first_receive_done
+                0x000ecffc                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x000ecffc                . = ALIGN (0x4)
+                0x000ecffc                . = ALIGN (0x4)
+                0x000ecffc                _end = .
+                0x000ecffc                PROVIDE (end, .)
+                0x000ecffc                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x28
+ *(.comment)
+ .comment       0x00000000       0x28 libsys_pic.a(pci_slot_name.pico)
+                                 0x29 (size before relaxing)
+ .comment       0x00000000       0x29 libsys_pic.a(pci_set_acl.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(pci_reserve.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(pci_rescan_bus.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(pci_next_dev.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(pci_ids.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(pci_get_bar.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(pci_first_dev.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(pci_find_dev.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(pci_dev_name.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(pci_del_acl.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(pci_attr_w8.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(pci_attr_w32.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(pci_attr_w16.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(pci_attr_r8.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(pci_attr_r32.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(pci_attr_r16.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(vm_set_priv.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(vm_query_exit.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(vm_procctl.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(vm_notify_sig.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(vm_memctl.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(vm_map_phys.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(vm_info.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(vm_fork.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(vm_exit.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(vm_cache.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(timers.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_vumap.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_vtimer.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_vsafecopy.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_vmctl.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_vircopy.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_update.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_trace.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_stime.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_statectl.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_sprof.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_sigsend.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_sigreturn.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_settime.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_setalarm.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_schedule.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_safememset.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_safecopy.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_runctl.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_privctl.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_physcopy.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_padconf.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_memset.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_mcontext.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_kill.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_irqctl.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_fork.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_exec.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_cprof.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_clear.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_abort.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(srv_kill.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(srv_fork.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sqrt_approx.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sched_stop.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sched_start.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(optset.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(mapdriver.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(kputs.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(kputc.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(getuptime.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(getsysinfo.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(getprocnr.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(getepinfo.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(fkey_ctl.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(env_prefix.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(env_parse.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(env_panic.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(env_get_prm.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(copyfd.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(checkperms.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(asynsend.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(alloc_util.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(vbox.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(timing.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_voutw.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_voutl.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_voutb.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_vinw.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_vinl.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_vinb.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_umap_remote.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_sdevio.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_readbios.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_int86.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_eniop.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(spin.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(ser_putc.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(profile.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(getidle.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(get_randomness.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(pci_init.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_umap.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_schedctl.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_diagctl.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(getticks.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(ds.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(tsc_util.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_out.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_in.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(profile_extern.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(tickdelay.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_profbuf.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_hz.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(safecopies.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_setgrant.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sef_signal.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_getsig.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_endsig.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sef_liveupdate.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sef_init.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sef.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(vm_update.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(taskcall.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_times.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_exit.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sef_ping.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sef_fi.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(assert.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(panic.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(sys_getinfo.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(stacktrace.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(kprintf.pico)
+ .comment       0x00000000       0x29 libsys_pic.a(kernel_call.pico)
+
+.ident          0x00000000       0xde
+ .ident         0x00000000       0x36 /usr/lib/crti.o
+ .ident         0x00000036       0x3a /usr/lib/crtbeginS.o
+ .ident         0x00000070       0x38 /usr/lib/crtendS.o
+ .ident         0x000000a8       0x36 /usr/lib/crtn.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(libsys.so.0.0 elf32-i386-minix)
