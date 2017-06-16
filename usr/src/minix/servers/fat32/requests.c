@@ -287,7 +287,7 @@ int do_read_dir_entry(fat32_dir_t* dir, fat32_entry_t* dst, int* was_written,
 				if (pfname < filename_buf) {
 					// The filename is too big for our buffer.
 					FAT_LOG_PUTS(warn, "Long filename is too big for the buffer. Truncating.");
-					continue;
+					break;
 				}
 			}
 		} else {
