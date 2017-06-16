@@ -213,7 +213,7 @@ int do_read_dir_entry(fat32_dir_t* dir, fat32_entry_t* dst, int* was_written,
 
 		// If we've reached the end, we must get to the next clustah
 		if (dir->cluster_buffer_offset + 32 > dir->fs->info.bytes_per_cluster) {
-			FAT_LOG_PRINTF(info, "Reached end of cluster %d", (int)dir->active_cluster);
+			FAT_LOG_PRINTF(debug, "Reached end of cluster %d", (int)dir->active_cluster);
 			int ret;
 			if ((ret = advance_dir_cluster(dir)) != OK) {
 				return ret;
@@ -232,7 +232,7 @@ int do_read_dir_entry(fat32_dir_t* dir, fat32_entry_t* dst, int* was_written,
 
 		if (direntry->short_entry.filename_83[0] == '\0') {
 			// Last directory entry in this cluster
-			FAT_LOG_PRINTF(info, "Reached end of direntry in cluster %d", (int)dir->active_cluster);
+			FAT_LOG_PRINTF(debug, "Reached end of direntry in cluster %d", (int)dir->active_cluster);
 			int ret;
 			if ((ret = advance_dir_cluster(dir)) != OK) {
 				return ret;
@@ -435,10 +435,6 @@ int do_close_file(fat32_file_t* file, endpoint_t who) {
 int do_close_directory(fat32_dir_t* dir, endpoint_t who) {
 	free(dir->cluster_buffer);
 	DESTROY_HANDLE(dir, dir);
-	FAT_LOG_PRINTF(debug, "destroying dir %d", dir->nr);
-	for (int i = 0; i < dir_handle_count; i++) {
-		FAT_LOG_PRINTF(debug, "handle = %d", dir_handles[i].nr);
-	}
 
 	return OK;
 }
@@ -446,11 +442,6 @@ int do_close_directory(fat32_dir_t* dir, endpoint_t who) {
 int do_close_fs(fat32_fs_t* fs, endpoint_t who) {
 	close(fs->fd);
 	DESTROY_HANDLE(fs, fs);
-	FAT_LOG_PRINTF(debug, "destroying fs %d", fs->nr);
-	for (int i = 0; i < fs_handle_count; i++) {
-		FAT_LOG_PRINTF(debug, "handle = %d", fs_handles[i].nr);
-	}
-
 
 	return OK;
 }

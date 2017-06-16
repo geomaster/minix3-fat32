@@ -65,15 +65,15 @@ typedef struct fat32_info_t {
 } fat32_info_t;
 
 typedef struct fat32_time_t {
-	uint8_t hours   : 5;
-	uint8_t minutes : 6;
 	uint8_t seconds : 5;
+	uint8_t minutes : 6;
+	uint8_t hours   : 5;
 } __attribute__((packed)) fat32_time_t;
 
 typedef struct fat32_date_t {
-	uint8_t year  : 7;
-	uint8_t month : 4;
 	uint8_t day   : 5;
+	uint8_t month : 4;
+	uint8_t year  : 7;
 } __attribute__((packed)) fat32_date_t;
 
 typedef struct fat32_direntry_t {

@@ -25,7 +25,7 @@
 
 static struct log fat32_syslog = {
 	.name = "fat32",
-	.log_level = LEVEL_TRACE,
+	.log_level = LEVEL_INFO,
 	.log_func = default_log
 };
 
