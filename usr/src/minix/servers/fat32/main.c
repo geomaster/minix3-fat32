@@ -26,9 +26,12 @@ int main(int argc, char **argv)
 		fat32_entry_t entry;
 		fat32_fs_t *fs;
 		fat32_dir_t *dir;
+		fat32_file_t *file;
 		fat32_request_t req;
 		int was_written;
 		void* dst_addr;
+		char* local_buf;
+		int local_len;
 		message m;
 		int result;
 
@@ -84,7 +87,7 @@ int main(int argc, char **argv)
 			case FAT32_READ_DIR_ENTRY:
 				dir = find_dir_handle(m.m_fat32_read_direntry.handle);
 				m.m_fat32_ret.ret = 0;
-				if (!dir)  {
+				if (!dir) {
 					result = EINVAL;
 					break;
 				}
@@ -110,6 +113,95 @@ int main(int argc, char **argv)
 				}
 
 				m.m_fat32_ret.ret = sizeof(fat32_entry_t);
+				break;
+
+			case FAT32_READ_FILE_BLOCK:
+				file = find_file_handle(m.m_fat32_read_block.handle);
+				m.m_fat32_ret.ret = 0;
+				if (!file) {
+					result = EINVAL;
+					break;
+				}
+
+				if (file->fs->opened_by != m.m_source) {
+					result = EPERM;
+					break;
+				}
+
+				dst_addr = m.m_fat32_read_block.buf_ptr;
+				local_len = m.m_fat32_read_block.buf_size;
+
+				if (local_len < file->fs->info.bytes_per_cluster) {
+					result = EINVAL;
+					break;
+				}
+
+				// Allocating a new buffer every time is criminally wasteful of
+				// resources. This should be fixed one day.
+				if ((local_buf = malloc(file->fs->info.bytes_per_cluster)) == NULL) {
+					result = ENOMEM;
+					break;
+				}
+
+				if ((result = do_read_file_block(file, local_buf, &local_len, m.m_source)) != OK) {
+					free(local_buf);
+					break;
+				}
+
+				if ((result = sys_vircopy(FAT32_PROC_NR, (vir_bytes)local_buf, m.m_source,
+								(vir_bytes) dst_addr, file->fs->info.bytes_per_cluster, 0)) != OK) {
+					free(local_buf);
+					break;
+				}
+
+				m.m_fat32_ret.ret = local_len;
+
+				free(local_buf);
+				break;
+
+			case FAT32_CLOSE_FILE:
+				file = find_file_handle(m.m_fat32_io_handle.handle);
+				if (!file) {
+					result = EINVAL;
+					break;
+				}
+
+				if (file->fs->opened_by != m.m_source) {
+					result = EPERM;
+					break;
+				}
+
+				result = do_close_file(file, m.m_source);
+				break;
+
+			case FAT32_CLOSE_DIR:
+				dir = find_dir_handle(m.m_fat32_io_handle.handle);
+				if (!dir) {
+					result = EINVAL;
+					break;
+				}
+
+				if (dir->fs->opened_by != m.m_source) {
+					result = EPERM;
+					break;
+				}
+
+				result = do_close_directory(dir, m.m_source);
+				break;
+
+			case FAT32_CLOSE_FS:
+				fs = find_fs_handle(m.m_fat32_io_handle.handle);
+				if (!fs) {
+					result = EINVAL;
+					break;
+				}
+
+				if (fs->opened_by != m.m_source) {
+					result = EPERM;
+					break;
+				}
+
+				result = do_close_fs(fs, m.m_source);
 				break;
 
 			default:

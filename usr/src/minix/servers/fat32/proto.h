@@ -77,6 +77,7 @@ typedef struct fat32_dir_t {
 	int cluster_buffer_offset;
 	int last_entry_start_cluster;
 	int last_entry_was_dir;
+	int last_entry_size_bytes;
 	char *cluster_buffer;
 } fat32_dir_t;
 
@@ -84,6 +85,7 @@ typedef struct fat32_file_t {
 	int nr;
 	fat32_fs_t* fs;
 	int active_cluster;
+	int remaining_size;
 } fat32_file_t;
 
 /* main.c */
@@ -120,3 +122,4 @@ int do_close_directory(fat32_dir_t* dir, endpoint_t who);
 int do_close_fs(fat32_fs_t* fs, endpoint_t who);
 
 int advance_dir_cluster(fat32_dir_t* dir);
+int advance_file_cluster(fat32_file_t* file);

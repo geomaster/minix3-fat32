@@ -2031,7 +2031,7 @@ _ASSERT_MSG_SIZE(mess_fat32_open_fs);
 typedef struct {
 	uint32_t handle;
 	void     *buf_ptr;
-	uint32_t *buf_size_ptr;
+	uint32_t buf_size;
 	char     padding[44];
 } mess_fat32_read_block;
 _ASSERT_MSG_SIZE(mess_fat32_read_block);

@@ -15,7 +15,7 @@
 			return &type##_handles[i]; \
 		} \
 	} \
-return NULL
+	return NULL
 
 fat32_fs_t* find_fs_handle(int h) {
 	FIND_HANDLE(fs, h);
@@ -29,24 +29,9 @@ fat32_file_t* find_file_handle(int h) {
 	FIND_HANDLE(file, h);
 }
 
-#define DESTROY_HANDLE(type, h) \
-	fat32_##type##_t *handle = find_##type##_handle(h); \
-if (handle != NULL) { \
-	*handle = type##_handles[type##_handle_count]; \
+#define DESTROY_HANDLE(type, ph) \
+	*ph = type##_handles[type##_handle_count - 1]; \
 	type##_handle_count--; \
-}
-
-void destroy_fs_handle(int h) {
-	DESTROY_HANDLE(fs, h);
-}
-
-void destroy_dir_handle(int h) {
-	DESTROY_HANDLE(dir, h);
-}
-
-void destroy_file_handle(int h) {
-	DESTROY_HANDLE(file, h);
-}
 
 #define CREATE_HANDLE(type, handle) \
 	do { \
@@ -148,6 +133,17 @@ int advance_dir_cluster(fat32_dir_t* dir) {
 	return OK;
 }
 
+int advance_file_cluster(fat32_file_t* file) {
+	int ret, next_cluster_nr;
+	if ((ret = get_next_cluster(&file->fs->header, &file->fs->info, file->fs->fd,
+					file->active_cluster, &next_cluster_nr)) != OK) {
+		return ret;
+	}
+
+	file->active_cluster = next_cluster_nr;
+	return OK;
+}
+
 void filename_83_to_string(char* filename_83, char* dest) {
 	// Copy the filename portion to the new string.
 	strncpy(dest, filename_83, 8);
@@ -164,14 +160,21 @@ void filename_83_to_string(char* filename_83, char* dest) {
 	// Copy the extension right after the dot.
 	strncpy(dest + first_space + 1, filename_83 + 8, 3);
 
-	// Find the first space in te extension and put a null terminator after
+	// Find the first space in the extension and put a null terminator after
 	// it.
+	int dot_position = first_space;
 	for (first_space = 8;
 		 first_space < 11 && filename_83[first_space] != ' ';
 		 first_space++)
 		;
 
-	dest[first_space] = '\0';
+	// If there's no extension, don't put the dot, just overwrite it with
+	// a null terminator.
+	if (first_space == 8) {
+		dest[dot_position] = '\0';
+	} else {
+		dest[dot_position + first_space - 8 + 1] = '\0';
+	}
 }
 
 int do_read_dir_entry(fat32_dir_t* dir, fat32_entry_t* dst, int* was_written,
@@ -280,6 +283,7 @@ int do_read_dir_entry(fat32_dir_t* dir, fat32_entry_t* dst, int* was_written,
 		short_entry->first_cluster_nr_low;
 
 	dir->last_entry_start_cluster = first_cluster_nr;
+	dir->last_entry_size_bytes = short_entry->size_bytes;
 
 	memset(dst, 0, sizeof(fat32_entry_t));
 	if (seen_long_direntry) {
@@ -332,4 +336,78 @@ destroy_handle:
 	dir_handle_next--;
 
 	return ret;
+}
+
+int do_open_file(fat32_dir_t* source, endpoint_t who) {
+	if (source->last_entry_was_dir || source->last_entry_start_cluster < 0) {
+		return EINVAL;
+	}
+
+	fat32_file_t *handle;
+	CREATE_HANDLE(file, handle);
+
+	handle->fs = source->fs;
+	handle->active_cluster = source->last_entry_start_cluster;
+	handle->remaining_size = source->last_entry_size_bytes;
+
+	return handle->nr;
+}
+
+int do_read_file_block(fat32_file_t* file, char* buffer, int* len, endpoint_t who) {
+	if (*len < file->fs->info.bytes_per_cluster) {
+		return EINVAL;
+	}
+
+	*len = 0;
+	if (file->active_cluster == -1) {
+		// Means we have reached the end of this file and there are no more
+		// clusters.
+		return OK;
+	}
+
+	int ret;
+	if ((ret = seek_read_cluster(&file->fs->header, &file->fs->info, file->fs->fd, file->active_cluster, buffer)) != OK) {
+		return ret;
+	}
+
+	if (file->remaining_size < file->fs->info.bytes_per_cluster) {
+		*len = file->remaining_size;
+		file->remaining_size = 0;
+		file->active_cluster = -1;
+	} else {
+		*len = file->fs->info.bytes_per_cluster;
+		file->remaining_size -= file->fs->info.bytes_per_cluster;
+
+		int prev_cluster = file->active_cluster;
+		if ((ret = advance_file_cluster(file)) != OK) {
+			return ret;
+		}
+
+		if (file->active_cluster == -1 && file->remaining_size > 0) {
+			FAT_LOG_PRINTF(warn, "There is no next cluster after %d for file handle %d, but there are %d "
+					             "bytes remaining to read", prev_cluster, file->nr, file->remaining_size);
+		}
+	}
+
+	return OK;
+}
+
+int do_close_file(fat32_file_t* file, endpoint_t who) {
+	DESTROY_HANDLE(file, file);
+
+	return OK;
+}
+
+int do_close_directory(fat32_dir_t* dir, endpoint_t who) {
+	free(dir->cluster_buffer);
+	DESTROY_HANDLE(dir, dir);
+
+	return OK;
+}
+
+int do_close_fs(fat32_fs_t* fs, endpoint_t who) {
+	close(fs->fd);
+	DESTROY_HANDLE(fs, fs);
+
+	return OK;
 }
