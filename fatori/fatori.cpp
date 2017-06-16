@@ -168,6 +168,10 @@ int main(int argc, char** argv) {
 		fs my_fs(device_name);
 
 		while (true) {
+			if (feof(stdin)) {
+				break;
+			}
+
 			string input;
 			cerr << "> ";
 			getline(cin, input);
@@ -178,10 +182,6 @@ int main(int argc, char** argv) {
 
 			if (input == "exit") {
 				break;
-			}
-
-			if (input == "ls") {
-
 			}
 
 			size_t space = input.find(' ');
