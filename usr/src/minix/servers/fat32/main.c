@@ -84,6 +84,25 @@ int main(int argc, char **argv)
 				}
 				break;
 
+			case FAT32_OPEN_FILE:
+				dir = find_dir_handle(m.m_fat32_io_handle.handle);
+				if (!dir) {
+					result = EINVAL;
+					break;
+				}
+
+				if (dir->fs->opened_by != m.m_source) {
+					result = EPERM;
+					break;
+				}
+
+				result = do_open_file(dir, m.m_source);
+				if (result >= 0) {
+					m.m_fat32_io_handle.handle = result;
+					result = OK;
+				}
+				break;
+
 			case FAT32_READ_DIR_ENTRY:
 				dir = find_dir_handle(m.m_fat32_read_direntry.handle);
 				m.m_fat32_ret.ret = 0;
@@ -112,7 +131,9 @@ int main(int argc, char **argv)
 					break;
 				}
 
-				m.m_fat32_ret.ret = sizeof(fat32_entry_t);
+				// Return the buffer size for this directory entry to be
+				// read.
+				m.m_fat32_ret.ret = dir->fs->info.bytes_per_cluster;
 				break;
 
 			case FAT32_READ_FILE_BLOCK:

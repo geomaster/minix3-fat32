@@ -971,12 +971,13 @@
 #define FAT32_OPEN_FS               (FAT32_BASE + 1)
 #define FAT32_OPEN_ROOTDIR          (FAT32_BASE + 2)
 #define FAT32_OPEN_DIR              (FAT32_BASE + 3)
-#define FAT32_READ_FILE_BLOCK       (FAT32_BASE + 4)
-#define FAT32_READ_DIR_ENTRY        (FAT32_BASE + 5)
-#define FAT32_CLOSE_FILE            (FAT32_BASE + 6)
-#define FAT32_CLOSE_DIR             (FAT32_BASE + 7)
-#define FAT32_CLOSE_FS              (FAT32_BASE + 8)
-#define FAT32_END       (FAT32_BASE + 9)
+#define FAT32_OPEN_FILE             (FAT32_BASE + 4)
+#define FAT32_READ_FILE_BLOCK       (FAT32_BASE + 5)
+#define FAT32_READ_DIR_ENTRY        (FAT32_BASE + 6)
+#define FAT32_CLOSE_FILE            (FAT32_BASE + 7)
+#define FAT32_CLOSE_DIR             (FAT32_BASE + 8)
+#define FAT32_CLOSE_FS              (FAT32_BASE + 9)
+#define FAT32_END                   (FAT32_BASE + 10)
 
 #define FAT32_ERR_NOT_FAT           -6000
 #define FAT32_ERR_INVALID_FAT       -6001

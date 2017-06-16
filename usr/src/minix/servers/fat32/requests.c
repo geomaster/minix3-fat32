@@ -424,6 +424,10 @@ int do_read_file_block(fat32_file_t* file, char* buffer, int* len, endpoint_t wh
 
 int do_close_file(fat32_file_t* file, endpoint_t who) {
 	DESTROY_HANDLE(file, file);
+	FAT_LOG_PRINTF(debug, "destroying file %d", file->nr);
+	for (int i = 0; i < file_handle_count; i++) {
+		FAT_LOG_PRINTF(debug, "handle = %d", file_handles[i].nr);
+	}
 
 	return OK;
 }
@@ -431,6 +435,10 @@ int do_close_file(fat32_file_t* file, endpoint_t who) {
 int do_close_directory(fat32_dir_t* dir, endpoint_t who) {
 	free(dir->cluster_buffer);
 	DESTROY_HANDLE(dir, dir);
+	FAT_LOG_PRINTF(debug, "destroying dir %d", dir->nr);
+	for (int i = 0; i < dir_handle_count; i++) {
+		FAT_LOG_PRINTF(debug, "handle = %d", dir_handles[i].nr);
+	}
 
 	return OK;
 }
@@ -438,6 +446,11 @@ int do_close_directory(fat32_dir_t* dir, endpoint_t who) {
 int do_close_fs(fat32_fs_t* fs, endpoint_t who) {
 	close(fs->fd);
 	DESTROY_HANDLE(fs, fs);
+	FAT_LOG_PRINTF(debug, "destroying fs %d", fs->nr);
+	for (int i = 0; i < fs_handle_count; i++) {
+		FAT_LOG_PRINTF(debug, "handle = %d", fs_handles[i].nr);
+	}
+
 
 	return OK;
 }
