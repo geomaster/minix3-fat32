@@ -300,7 +300,7 @@ int do_read_dir_entry(fat32_dir_t* dir, fat32_entry_t* dst, int* was_written,
 	}
 
 	int first_cluster_nr =
-		(short_entry->first_cluster_nr_high << 8) |
+		(short_entry->first_cluster_nr_high << 16) |
 		short_entry->first_cluster_nr_low;
 
 	// This is needed so that do_open_dir and do_open_file on this fs_dir_t can
