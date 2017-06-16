@@ -7,6 +7,9 @@
 
 #define OK 0
 
+/* Refer to the FAT32 documentation for details on the implementation of some of
+ * these functions and some magic numbers used. */
+
 int build_fat_info(fat32_header_t* header, fat32_info_t *dst_info) {
 	if (header->bpb.header[0] != 0xEB || header->bpb.header[2] != 0x90) {
 		return FAT32_ERR_NOT_FAT;

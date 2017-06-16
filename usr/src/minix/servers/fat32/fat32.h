@@ -5,6 +5,7 @@
 typedef struct fat32_entry_t fat32_entry_t;
 #endif
 
+/* Attributes that FAT32 files can have. */
 typedef enum fat32_attrs_t {
 	FAT32_ATTR_READONLY = 0x01,
 	FAT32_ATTR_HIDDEN   = 0x02,
@@ -13,6 +14,9 @@ typedef enum fat32_attrs_t {
 	FAT32_ATTR_DIR      = 0x10,
 	FAT32_ATTR_ARCHIVE  = 0x20
 } fat32_attrs_t;
+
+/* Familiarity with FAT32 is needed to understand the following data structures.
+ * They are mostly defined by their on-disk format. */
 
 typedef struct fat32_bpb_t {
 	uint8_t   header[3];
@@ -97,16 +101,31 @@ typedef struct fat32_lfn_direntry_t {
 	uint16_t      chars_3[2];
 } __attribute__((packed)) fat32_lfn_direntry_t;
 
+// A type that can represent any kind of direntry, be it a short or long one.
 typedef union fat32_any_direntry_t {
 	fat32_direntry_t     short_entry;
 	fat32_lfn_direntry_t long_entry;
 } fat32_any_direntry_t;
 
+/* Calculates various FAT32 constants and checks if the filesystem is valid
+ * FAT32. */
 int build_fat_info(fat32_header_t* header, fat32_info_t* dst_info);
+
+/* Reads the FAT header from an fd. */
 int read_fat_header(int fd, fat32_header_t* dst);
+
+/* Seeks to a cluster identified by a given cluster numbe. */
 int seek_cluster(fat32_header_t* header, fat32_info_t* info, int fd, int cluster_nr);
+
+/* Seeks to a given cluster and reads its contents into memory. The buffer given
+ * must be at least info->bytes_per_sector bytes long. */
 int seek_read_cluster(fat32_header_t* header, fat32_info_t* info, int fd, int cluster_nr, char* buf);
+
+/* Looks up the given cluster in the FAT and gets its successor in the cluster
+ * chain. Writes -1 to *next_cluster_nr if this is the last cluster in the chain.
+ * */
 int get_next_cluster(fat32_header_t* header, fat32_info_t* info, int fd, int cluster_nr, int* next_cluster_nr);
 
-// Caller sets the filename.
+/* Converts a raw FAT32 entry type to a user-friendlier type. The caller must set
+ * the filename. */
 void convert_entry(fat32_direntry_t* entry, fat32_entry_t* dest);

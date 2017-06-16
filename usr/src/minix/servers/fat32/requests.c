@@ -122,11 +122,14 @@ int advance_dir_cluster(fat32_dir_t* dir) {
 		dir->active_cluster = next_cluster_nr;
 		dir->cluster_buffer_offset = 0;
 
+		// Advancing the directory cluster also means we have to read in the
+		// cluster's contents into the buffer.
 		if ((ret = seek_read_cluster(&dir->fs->header, &dir->fs->info,
 		                dir->fs->fd, next_cluster_nr, dir->cluster_buffer)) != OK) {
 			return ret;
 		}
 	} else {
+		// This signifies 'no more clusters' to do_read_dir_entry.
 		dir->cluster_buffer_offset = -1;
 	}
 
@@ -185,20 +188,30 @@ int do_read_dir_entry(fat32_dir_t* dir, fat32_entry_t* dst, int* was_written,
 	dir->last_entry_was_dir = FALSE;
 
 	if (dir->cluster_buffer_offset == -1) {
-		// This whole dir was read previously.
+		// Thhe whole dir was read during a previous call.
 		return OK;
 	}
 
-	int is_long_direntry = FALSE;
+	// We'll build the filename from behind, in this buffer, as we encounter the long
+	// direntries in opposite order.
 	char filename_buf[FAT32_MAX_NAME_LEN];
 	memset(filename_buf, 0, FAT32_MAX_NAME_LEN);
 	char *pfname = filename_buf + FAT32_MAX_NAME_LEN - 2; // Leave space for a single null terminator
-	int seen_long_direntry = FALSE;
+
+	int seen_long_direntry = FALSE; // Whether we've seen a single long direntry. If we have, then we
+	                                // should use the filenames given there. If not, we must use the
+									// 8.3 filename given in the short entry.
 
 	fat32_direntry_t* short_entry = NULL;
+
+	int is_long_direntry; // Flag to control the outer loop
+
+	// Loop until we get to the short direntry corresponding to long direntries
+	// that we might encounter
 	do {
 		is_long_direntry = FALSE;
 
+		// If we've reached the end, we must get to the next clustah
 		if (dir->cluster_buffer_offset + 32 > dir->fs->info.bytes_per_cluster) {
 			FAT_LOG_PRINTF(info, "Reached end of cluster %d", (int)dir->active_cluster);
 			int ret;
@@ -234,11 +247,17 @@ int do_read_dir_entry(fat32_dir_t* dir, fat32_entry_t* dst, int* was_written,
 			// with a current_buffer_offset of 0 and a new cluster inside the
 			// buffer.
 		} else if (direntry->short_entry.attributes == 0x0f) {
+			// 0x0F as attributes field means this is a long direntry.
+
 			is_long_direntry = TRUE;
 			seen_long_direntry = TRUE;
 
+			if (pfname < filename_buf) { // Truncated filename in a previous direntry?
+				continue;
+			}
+
 			// Copy the filename into a temporary buffer for easier handling
-			// because its bytes are scattered around
+			// because its bytes are scattered around the struct
 			uint16_t temp_lfn_buf[16];
 			uint16_t *pbuf = temp_lfn_buf;
 			memset(temp_lfn_buf, 0, sizeof(temp_lfn_buf));
@@ -253,8 +272,10 @@ int do_read_dir_entry(fat32_dir_t* dir, fat32_entry_t* dst, int* was_written,
 				*pbuf++ = direntry->long_entry.chars_3[i];
 			}
 
-			// Find the length and copy everything into the filename
-			// buffer
+			// Find the length of this buffer. Even if the original string has no
+			// null terminator (i.e. its length fills the direntry char fields
+			// completely), we have a bit of leeway inside the buffer and we
+			// memset'd it to zero, so we're guaranteed to get to it.
 			int len = 0;
 			for (uint16_t* len_pbuf = temp_lfn_buf; *len_pbuf; len_pbuf++) {
 				len++;
@@ -282,6 +303,8 @@ int do_read_dir_entry(fat32_dir_t* dir, fat32_entry_t* dst, int* was_written,
 		(short_entry->first_cluster_nr_high << 8) |
 		short_entry->first_cluster_nr_low;
 
+	// This is needed so that do_open_dir and do_open_file on this fs_dir_t can
+	// get to the correct info about the just-read file.
 	dir->last_entry_start_cluster = first_cluster_nr;
 	dir->last_entry_size_bytes = short_entry->size_bytes;
 
@@ -316,6 +339,8 @@ int do_open_directory(fat32_dir_t* source, endpoint_t who) {
 		goto destroy_handle;
 	}
 
+	// do_open_directory opens the directory that was last returned from
+	// do_read_dir_entry, so we use this memoized cluster number now.
 	int cluster_nr = source->last_entry_start_cluster;
 	if ((ret = seek_read_cluster(&source->fs->header, &source->fs->info, source->fs->fd, cluster_nr, buf)) != OK) {
 		goto dealloc_buffer;
@@ -359,9 +384,11 @@ int do_read_file_block(fat32_file_t* file, char* buffer, int* len, endpoint_t wh
 	}
 
 	*len = 0;
-	if (file->active_cluster == -1) {
+	if (file->active_cluster == -1 || file->remaining_size == 0) {
 		// Means we have reached the end of this file and there are no more
-		// clusters.
+		// clusters. file->remaining_size may be 0 even if file->active_cluster
+		// is not -1 in some strange cases where new clusters are preallocated
+		// and the file ends exactly on a cluster boundary.
 		return OK;
 	}
 
@@ -371,10 +398,13 @@ int do_read_file_block(fat32_file_t* file, char* buffer, int* len, endpoint_t wh
 	}
 
 	if (file->remaining_size < file->fs->info.bytes_per_cluster) {
+		// The size remaining is less than what we've read, ensure that we don't
+		// read anything for this file anymore.
 		*len = file->remaining_size;
 		file->remaining_size = 0;
 		file->active_cluster = -1;
 	} else {
+		// The size remaining is 
 		*len = file->fs->info.bytes_per_cluster;
 		file->remaining_size -= file->fs->info.bytes_per_cluster;
 
